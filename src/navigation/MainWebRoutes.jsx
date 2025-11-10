@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFoundPage from '../pages/NotFoundPage'
 import Home from '../pages/Home'
 import NavandFooter_Layout from '../layouts/NavandFooter_Layout'
+import TermAndCondition from '../pages/Terms&Condition'
 
 const MainWebRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const MainWebRoutes = () => {
       <Routes>
         <Route element={<NavandFooter_Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/term-condition" element={<TermAndCondition />} />
           {/* add more routes here */}
 
         </Route>
