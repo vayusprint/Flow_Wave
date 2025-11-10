@@ -9,7 +9,7 @@ const ProductCard = ({ alt, srcImage, imageBg, productName, productDescription }
         <div className='flex flex-col gap-7 p-8 bg-white rounded-[15px] border border-divider'>
             <div className='relative rounded-lg p-2 flex justify-center items-center'>
                 <div className='absolute inset-0 rounded-2xl opacity-10' style={{ backgroundColor: imageBg }} ></div>
-                <img alt={alt} src={srcImage} className='relative z-10 object-contain w-full h-auto max-w-[300px] max-h-[300px]' />
+                <img loading="lazy" alt={alt} src={srcImage} className='relative z-10 object-contain w-full h-auto max-w-[300px] max-h-[300px]' />
             </div>
             <div className='flex flex-col gap-6'>
                 <div className='flex flex-col gap-4'>
