@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PrimaryButton = ({ title }) => {
+const PrimaryButton = ({ title, pl, pr, onClick, type }) => {
     return (
-        <button className=' rounded-lg bg-primary text-white px-4 py-3 text-center'>
+        <button type={type} onClick={onClick} className=' rounded-lg bg-primary text-white text-center py-12' style={{paddingLeft:pl , paddingRight:pr}}>
             <p>{title}</p>
         </button>
     )

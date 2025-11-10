@@ -5,14 +5,8 @@ import Container from '../components/Container'
 
 const TermAndCondition = () => {
   return (
-      <>
-      <SubHeaderSection alt={'product sub head image'} src={SubheadBg} />
-      <Container>
-        <div className='flex justify-between'>
-          <p>hello</p>
-          <p>hello</p>
-        </div>
-      </Container>
+    <>
+      <p>Hello</p>
       </>
   )
 }
