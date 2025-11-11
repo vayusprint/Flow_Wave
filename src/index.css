@@ -42,6 +42,7 @@ body{
   --text-32: 32px;
   --text-48: 48px;
   --text-50: 50px;
+  --text-64: 64px;
   --text-80: 80px;
 
 
@@ -55,7 +56,9 @@ body{
   --spacing-36: 36px;
   --spacing-40: 40px;
   --spacing-48: 48px;
+  --spacing-52: 52px;
   --spacing-56: 56px;
+  --spacing-100: 100px;
 
 
   --breakpoint-1650px : 1650px;
