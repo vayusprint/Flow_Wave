@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       {/* 🔹 Top Info Bar */}
-      <div className="w-full bg-primary text-white text-sm md:text-base">
+      <div className="w-full bg-primary text-white text-sm md:text-base 428:block hidden">
         <Container>
           <div className="flex flex-col font-montserrat md:flex-row items-center justify-between py-2">
             {/* Left side - Contact Info */}

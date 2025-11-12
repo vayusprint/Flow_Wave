@@ -33,7 +33,7 @@ body{
   --font-weight-black: 900;
 
   /*---------------------------------- Text Sizes ----------------------------------*/
-  --text-12: 12px;
+  /* --text-12: 12px;
   --text-14: 14px;
   --text-16: 16px;
   --text-18: 18px;
@@ -44,7 +44,52 @@ body{
   --text-48: 48px;
   --text-50: 50px;
   --text-64: 64px;
-  --text-80: 80px;
+  --text-80: 80px; */
+
+  /*---------------------------------- Responsive Font Sizes + Line Heights ----------------------------------*/
+--text-96: clamp(48px, 6vw + 1rem, 96px);
+--leading-96: clamp(58px, 6.8vw + 1.2rem, 108px);
+
+
+--text-80: clamp(44px, 5.5vw + 1rem, 80px);
+--leading-80: clamp(54px, 6vw + 1.2rem, 92px);
+
+--text-64: clamp(36px, 4.5vw + 0.8rem, 64px);
+--leading-64: clamp(46px, 5vw + 1rem, 76px);
+
+--text-50: clamp(32px, 3.5vw + 0.5rem, 50px);
+--leading-50: clamp(40px, 4vw + 0.8rem, 60px);
+
+--text-48: clamp(30px, 3.2vw + 0.4rem, 48px);
+--leading-48: clamp(38px, 3.8vw + 0.7rem, 58px);
+
+--text-40: clamp(26px, 2.8vw + 0.4rem, 40px);
+--leading-40: clamp(34px, 3.3vw + 0.6rem, 50px);
+
+--text-32: clamp(20px, 2vw + 0.3rem, 32px);
+--leading-32: clamp(28px, 2.5vw + 0.4rem, 42px);
+
+--text-28: clamp(18px, 1.8vw + 0.3rem, 28px);
+--leading-28: clamp(26px, 2.3vw + 0.3rem, 38px);
+
+--text-24: clamp(16px, 1.6vw + 0.2rem, 24px);
+--leading-24: clamp(22px, 2vw + 0.3rem, 32px);
+
+--text-20: clamp(14px, 1.3vw + 0.2rem, 20px);
+--leading-20: clamp(20px, 1.8vw + 0.2rem, 28px);
+
+--text-18: clamp(13px, 1.2vw + 0.1rem, 18px);
+--leading-18: clamp(18px, 1.5vw + 0.1rem, 26px);
+
+--text-16: clamp(12px, 1vw + 0.1rem, 16px);
+--leading-16: clamp(16px, 1.2vw + 0.1rem, 24px);
+
+--text-14: clamp(11px, 0.8vw + 0.1rem, 14px);
+--leading-14: clamp(14px, 1vw + 0.1rem, 20px);
+
+--text-12: clamp(10px, 0.6vw + 0.1rem, 12px);
+--leading-12: clamp(12px, 0.8vw + 0.1rem, 16px);
+
 
 
   --spacing-8: 8px;
@@ -64,8 +109,12 @@ body{
   --spacing-100: 100px;
 
 
+
+
+
   --breakpoint-1650px : 1650px;
   --breakpoint-1024px : 1024px;
   --breakpoint-600px : 600px;
   --breakpoint-530 : 530px;
+  --breakpoint-428 : 428px;
 }

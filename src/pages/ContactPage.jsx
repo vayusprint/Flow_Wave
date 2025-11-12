@@ -76,14 +76,32 @@ const ContactPage = () => {
     };
 
 
+    const companyNumber = "+919876543210"; // Your company number
+
+    const handleCall = () => {
+        // Open default dialer with number
+        window.location.href = `tel:${companyNumber}`;
+
+        // Show toast message
+        toast.success("Phone number copied!", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+        });
+    };
+
+
     return (
         <>
             <SubHeaderSection alt={'Contact_sub_head_image'} src={ContactSubHedImage} SubheadingDesc={'Have questions or need assistance? Our team is here to help with product details, quotations, or partnership inquiries.'} SubheadingTitle={'Contact Flow Wave'} />
             <Container>
-                <div className='flex flex-col gap-52 600px:pt-100 pt-56'>
+                <div className='flex flex-col 600px:gap-52 gap-28 600px:pt-100 pt-40'>
                     <div className='flex 1024px:flex-row flex-col w-full 1024:gap-20 gap-28'>
 
-                        <div className='flex flex-col gap-56 rounded-[15px] bg-white border border-divider 600px:px-32 px-28 600px:py-40 py-28 w-full'>
+                        <div className='flex flex-col 1024px:gap-56 428:gap-48 gap-36 rounded-[15px] bg-white border border-divider 600px:px-32 px-28 600px:py-40 py-28 w-full'>
                             <p className='font-montserrat font-medium text-32 text-muted_text 600px:text-start text-center'>Business Inquiry Form</p>
 
                             <form onSubmit={handleSubmit} className='w-full flex flex-col 600px:gap-48 gap-20'>
@@ -151,7 +169,7 @@ const ContactPage = () => {
                                 </div>
 
 
-                                <div className='w-full flex flex-col gap-20'>
+                                <div className='w-full flex flex-col 428:gap-20 gap-2'>
                                     <label htmlFor='message' className='font-montserrat font-medium text-black text-18'>Message <span className="text-red-500 font-montserrat font-medium text-18">*</span></label>
                                     <textarea
                                         className={`border font-medium font-montserrat text-18 text-muted_text rounded-lg py-16 px-16 focus:outline-none  transition-all duration-200 ${errors.message ? 'border-red-500 focus:ring-2 focus:ring-red-400' : 'border-divider'}`}
@@ -173,46 +191,46 @@ const ContactPage = () => {
                         </div>
 
                         <div className="flex flex-col 600px:gap-20 gap-28">
-                            <div className="flex flex-col items-start gap-56 rounded-[15px] bg-white border border-divider px-32 py-40 h-full">
-                                <p className="font-montserrat font-medium text-32 text-muted_text 600px:text-start text-center w-full">
+                            <div className="flex flex-col items-start 1024px:gap-56 428:gap-48 gap-36 rounded-[15px] bg-white border border-divider 600px:px-32 px-28 600px:py-40 py-28 h-full">
+                                <p className="font-montserrat font-medium text-32 leading-32 text-muted_text 600px:text-start text-center w-full">
                                     Contact Information
                                 </p>
 
                                 <div className='flex flex-col justify-between h-full 530:gap-48 gap-36 '>
 
                                     {/* --------------------- Location ------------------------- */}
-                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
-                                        <img src={Location} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
+                                    <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
+                                        <img src={Location} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center '>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
                                     </div>
                                     {/* --------------------- Email ------------------------- */}
-                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
-                                        <img src={Phone} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>+91  9265753274</p>
+                                    <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
+                                        <img src={Phone} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>+91  9265753274</p>
                                     </div>
                                     {/* --------------------- Time ------------------------- */}
-                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
-                                        <img src={Email} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>flowwaveinstrument@gmail.com</p>
+                                    <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
+                                        <img src={Email} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>flowwaveinstrument@gmail.com</p>
                                     </div>
                                     {/* --------------------- Location ------------------------- */}
-                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
-                                        <img src={Time} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>MON - FRI   08:00 AM -- 06:00 PM</p>
+                                    <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
+                                        <img src={Time} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>MON - FRI   08:00 AM -- 06:00 PM</p>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div className='flex flex-col items-start gap-56 rounded-[15px] bg-white border border-divider px-32 py-40 h-full'>
-                                <div className='flex flex-col gap-24'>
-                                    <p className="font-montserrat font-medium text-32 text-muted_text">
+                            <div className='flex flex-col items-start 1024px:gap-56 428:gap-48 gap-36 rounded-[15px] bg-white border border-divider 600px:px-32 px-28 600px:py-40 py-28 h-full'>
+                                <div className='flex flex-col 428:gap-24 gap-12'>
+                                    <p className="font-montserrat font-medium text-32 leading-32 text-muted_text">
                                         Need Immediate Assistance?
                                     </p>
-                                    <p className='font-montserrat font-normal text-20 text-muted_text'>Our technical support team is available to help with urgent inquiries</p>
+                                    <p className='font-montserrat font-normal text-20 leading-20 text-muted_text'>Our technical support team is available to help with urgent inquiries</p>
                                 </div>
 
-                                <PrimaryButton title={'Call Now'} width={'100%'} />
+                                <PrimaryButton onClick={handleCall} title={'Call Now'} width={'100%'} />
 
                             </div>
                         </div>

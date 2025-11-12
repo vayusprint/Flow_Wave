@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <Container>
-        <footer className="w-full mt-100 bg-white border-t border-gray-200">
+        <footer className="w-full mt-100 border-t border-gray-200">
           {/* Top Section */}
           <div className="flex flex-col md:flex-row justify-between gap-10 py-10">
             {/* Left: Logo + Description + Socials */}

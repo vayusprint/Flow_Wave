@@ -2,7 +2,7 @@ import React from 'react'
 
 const InputField = ({name,label,type = 'text',placeholder,value,onChange,error,required = false,}) => {
     return (
-        <div className='flex flex-col gap-20'>
+        <div className='flex flex-col 428:gap-20 gap-2'>
             {label && (
                 <label htmlFor={name} className='font-montserrat font-medium text-black text-18'>
                     {label} {required && <span className="text-red-500 font-montserrat font-medium text-18">*</span>}
