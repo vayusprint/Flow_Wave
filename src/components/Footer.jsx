@@ -81,9 +81,9 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-primary transition">
+                    <Link to="/certification" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
                       Certifications
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">

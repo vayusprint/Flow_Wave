@@ -7,6 +7,7 @@ import TermAndCondition from '../pages/Terms&Condition'
 import ContactPage from '../pages/ContactPage'
 import { ToastContainer } from 'react-toastify'
 import PrivacyPolicy from '../pages/PrivacyPolicy'
+import Certification from '../pages/Certification'
 
 const MainWebRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const MainWebRoutes = () => {
       <Routes>
         <Route element={<NavandFooter_Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/certification" element={<Certification />} />
           <Route path="/term-condition" element={<TermAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact-us" element={<ContactPage />} />
