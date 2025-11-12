@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* 🔹 Top Info Bar */}
       <div className="w-full bg-primary text-white text-sm md:text-base">
         <Container>
-          <div className="flex flex-col font-montserrat md:flex-row items-center justify-between py-2 px-4 md:px-8">
+          <div className="flex flex-col font-montserrat md:flex-row items-center justify-between py-2">
             {/* Left side - Contact Info */}
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
               <a href="tel:+91 98765 43210" className="hover:underline">
@@ -34,7 +34,7 @@ const Navbar = () => {
         </Container>
       </div>
       <Container>
-        <nav className="h-[90px] w-full px-6 md:px-16 flex items-center justify-between bg-body relative z-30">
+        <nav className="h-[90px] w-full flex items-center justify-between bg-body relative z-30">
           {/* Logo */}
           <Link to="/" className="flex items-center justify-center text-center">
             <img
