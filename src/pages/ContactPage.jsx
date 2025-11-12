@@ -78,18 +78,18 @@ const ContactPage = () => {
 
     return (
         <>
-            <SubHeaderSection alt={'Contact_sub_head_image'} src={ContactSubHedImage} SubheadingDesc={'Have questions or need assistance? Our team is here to help with product details, quotations, or partnership inquiries.'} SubheadingTitle={'Contact Flow Wave'} width={'1000px'} />
+            <SubHeaderSection alt={'Contact_sub_head_image'} src={ContactSubHedImage} SubheadingDesc={'Have questions or need assistance? Our team is here to help with product details, quotations, or partnership inquiries.'} SubheadingTitle={'Contact Flow Wave'} />
             <Container>
-                <div className='flex flex-col gap-52 py-100'>
-                    <div className='flex w-full gap-20'>
+                <div className='flex flex-col gap-52 600px:pt-100 pt-56'>
+                    <div className='flex 1024px:flex-row flex-col w-full 1024:gap-20 gap-28'>
 
-                        <div className='flex flex-col gap-56 rounded-[15px] bg-white border border-divider px-32 py-40 w-full'>
-                            <p className='font-montserrat font-medium text-32 text-muted_text'>Business Inquiry Form</p>
+                        <div className='flex flex-col gap-56 rounded-[15px] bg-white border border-divider 600px:px-32 px-28 600px:py-40 py-28 w-full'>
+                            <p className='font-montserrat font-medium text-32 text-muted_text 600px:text-start text-center'>Business Inquiry Form</p>
 
-                            <form onSubmit={handleSubmit} className='w-full flex flex-col gap-48'>
+                            <form onSubmit={handleSubmit} className='w-full flex flex-col 600px:gap-48 gap-20'>
 
                                 {/* ----------------------------- Name and Email ------------------------- */}
-                                <div className='grid grid-cols-2 w-full gap-20'>
+                                <div className='grid 600px:grid-cols-2 grid-cols-1 w-full gap-20'>
                                     <InputField
                                         type='text'
                                         label={"Full Name"}
@@ -113,7 +113,7 @@ const ContactPage = () => {
                                 </div>
 
                                 {/* ----------------------------- Phone Number and Company Name ------------------------- */}
-                                <div className='grid grid-cols-2 w-full gap-20'>
+                                <div className='grid 600px:grid-cols-2 grid-cols-1 w-full gap-20'>
                                     <InputField
                                         type='tel'
                                         label={"Phone Number"}
@@ -172,33 +172,33 @@ const ContactPage = () => {
                             </form>
                         </div>
 
-                        <div className="flex flex-col gap-20">
+                        <div className="flex flex-col 600px:gap-20 gap-28">
                             <div className="flex flex-col items-start gap-56 rounded-[15px] bg-white border border-divider px-32 py-40 h-full">
-                                <p className="font-montserrat font-medium text-32 text-muted_text">
+                                <p className="font-montserrat font-medium text-32 text-muted_text 600px:text-start text-center w-full">
                                     Contact Information
                                 </p>
 
-                                <div className='flex flex-col justify-between h-full gap-48'>
+                                <div className='flex flex-col justify-between h-full 530:gap-48 gap-36 '>
 
                                     {/* --------------------- Location ------------------------- */}
-                                    <div className='flex gap-24 items-center'>
+                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
                                         <img src={Location} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text'>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
+                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
                                     </div>
                                     {/* --------------------- Email ------------------------- */}
-                                    <div className='flex gap-24 items-center'>
+                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
                                         <img src={Phone} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text'>+91  9265753274</p>
+                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>+91  9265753274</p>
                                     </div>
                                     {/* --------------------- Time ------------------------- */}
-                                    <div className='flex gap-24 items-center'>
+                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
                                         <img src={Email} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text'>flowwaveinstrument@gmail.com</p>
+                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>flowwaveinstrument@gmail.com</p>
                                     </div>
                                     {/* --------------------- Location ------------------------- */}
-                                    <div className='flex gap-24 items-center'>
+                                    <div className='flex 530:flex-row flex-col gap-24 items-center'>
                                         <img src={Time} alt='location_icon' />
-                                        <p className='font-montserrat font-normal text-20 text-muted_text'>MON - FRI   08:00 AM -- 06:00 PM</p>
+                                        <p className='font-montserrat font-normal text-20 text-muted_text w-full 530:text-start text-center'>MON - FRI   08:00 AM -- 06:00 PM</p>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ const ContactPage = () => {
                     </div>
 
 
-                    <div className="w-full h-[500px] bg-amber-300 rounded-[15px] overflow-hidden">
+                    <div className="w-full h-[500px] rounded-[15px] overflow-hidden">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.851088036117!2d73.14555837533545!3d22.263260879713272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc70e58052f3f%3A0x631d25dc409bc232!2sFlow%20Wave%20Instrument!5e1!3m2!1sen!2sin!4v1762861920857!5m2!1sen!2sin"
                             className="w-full h-full border-0"

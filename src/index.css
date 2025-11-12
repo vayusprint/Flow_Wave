@@ -60,8 +60,12 @@ body{
   --spacing-50: 50px;
   --spacing-52: 52px;
   --spacing-56: 56px;
+  --spacing-80: 80px;
   --spacing-100: 100px;
 
 
   --breakpoint-1650px : 1650px;
+  --breakpoint-1024px : 1024px;
+  --breakpoint-600px : 600px;
+  --breakpoint-530 : 530px;
 }
