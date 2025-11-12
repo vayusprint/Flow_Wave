@@ -63,9 +63,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-primary/70 transition" href="#">
+              <Link to="/certification" className="hover:text-primary/70 transition" href="#">
                 Certifications
-              </a>
+              </Link>
             </li>
             <PrimaryButton title="Contact Us" pl={12} pr={12} />
           </ul>
