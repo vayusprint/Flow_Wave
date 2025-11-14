@@ -61,19 +61,19 @@ const Footer = () => {
             <div className="flex flex-wrap md:flex-nowrap gap-20 md:gap-100">
               {/* Quick Links */}
               <div>
-                <h2 className="font-montserrat font-semibold text-lg md:text-24 text-primary mb-4">
+                <h2 className="font-montserrat font-semibold text-24 leading-24 text-primary mb-4">
                   Quick Links
                 </h2>
-                <ul className="space-y-3 text-bodytext text-base md:text-24">
+                <ul className="space-y-3 text-bodytext text-base text-24 leading-24">
                   <li>
                     <Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-primary transition">
+                    <Link to="/about-us" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="hover:text-primary transition">
@@ -95,10 +95,10 @@ const Footer = () => {
 
               {/* Contact Info */}
               <div>
-                <h2 className="font-montserrat font-semibold text-lg md:text-24 text-primary mb-4">
+                <h2 className="font-montserrat font-semibold text-24 leading-24 text-primary mb-4">
                   Contact Information
                 </h2>
-                <ul className="space-y-3 text-bodytext text-base md:text-24">
+                <ul className="space-y-3 text-bodytext text-base text-24 leading-24">
                   <li className="flex flex-wrap gap-1">
                     <span className="font-semibold">Address:</span>{" "}
                     <span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</span>
@@ -122,7 +122,7 @@ const Footer = () => {
           </div>
         </footer>
       </Container>
-      <div className="w-full bg-[#0083BF1A] text-gray-500 text-16 md:text-18 py-4">
+      <div className="w-full bg-[#0083BF1A] text-gray-500 text-18 leading-18 py-4">
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center gap-3">
             {/* Left Text */}
@@ -139,7 +139,7 @@ const Footer = () => {
             </div>
 
             {/* Right Links */}
-            <div className="flex gap-50 font-montserrat text-primary text-16 md:text-18">
+            <div className="flex gap-50 font-montserrat text-primary text-18 leading-18">
               <Link
                 to="/term-condition"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -53,9 +53,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-primary/70 transition" href="#">
+              <Link to="/about-us" className="hover:text-primary/70 transition" href="#">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
               <a className="hover:text-primary/70 transition" href="#">
