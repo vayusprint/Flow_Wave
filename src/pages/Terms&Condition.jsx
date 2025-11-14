@@ -9,7 +9,7 @@ const TermAndCondition = () => {
     <>
       <SubHeaderSection SubheadingTitle={'Terms & Conditions'} SubheadingDesc={'Welcome to Flow Wave. Please read our Terms & Conditions carefully to understand the rules, responsibilities, and policies that govern your use of our website and business services. By continuing to browse or interact with Flow Wave, you agree to abide by these terms.'} alt={'termsAnd_condition_subheading_image'} width={'1200px'} src={TermAndConditionImage} />
       <Container>
-        <div className='flex flex-col gap-56 pt-100'>
+        <div className='flex flex-col 600px:gap-52 gap-28 600px:pt-100 pt-40 '>
 
           {/* ------------------------ 1. Introduction ------------------------------------*/}
           <SectionBlock
