@@ -66,6 +66,9 @@ body{
 --text-40: clamp(26px, 2.8vw + 0.4rem, 40px);
 --leading-40: clamp(34px, 3.3vw + 0.6rem, 50px);
 
+--text-36: clamp(22px, 2.4vw + 0.35rem, 36px);
+--leading-36: clamp(30px, 2.9vw + 0.5rem, 48px);
+
 --text-32: clamp(20px, 2vw + 0.3rem, 32px);
 --leading-32: clamp(28px, 2.5vw + 0.4rem, 42px);
 

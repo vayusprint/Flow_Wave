@@ -8,6 +8,7 @@ import CertificationBlock from '../components/Certifications/CertificationBlock'
 import fssai from "../assets/images/fssai.png";
 import APEDA from "../assets/images/APEDA.png";
 import DGFT from "../assets/images/DGFT.png";
+import Udyam from "../assets/images/udyam.png";
 
 const certifications = [
   {
@@ -22,7 +23,7 @@ const certifications = [
   },
   {
     title: "Udyam Registration Certificate",
-    organisation_logo: fssai, // Replace with Udyam logo if available
+    organisation_logo: Udyam, // Replace with Udyam logo if available
     alt_text: "Udyam logo",
     provided_by:
       "Ministry of Micro, Small and Medium Enterprises (MSME), Government of India",
