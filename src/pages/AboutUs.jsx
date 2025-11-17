@@ -6,6 +6,7 @@ import about_us_header from "../assets/images/about_us_header.png"
 import AboutStatsSection from '../components/AboutUs/AboutStatsSection'
 import GlobalStandardsSection from '../components/AboutUs/GlobalStandardsSection'
 import AboutInfoCards from '../components/AboutUs/AboutInfoCards'
+import TestimonialSection from '../components/AboutUs/TestimonialSection'
 
 const AboutUs = () => {
   return (
@@ -15,6 +16,7 @@ const AboutUs = () => {
       <AboutStatsSection />
       <GlobalStandardsSection />
       <AboutInfoCards />
+      <TestimonialSection />
     </>
   )
 }
