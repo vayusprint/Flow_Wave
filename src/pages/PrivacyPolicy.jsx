@@ -7,7 +7,7 @@ import TermAndConditionImage from '../assets/images/t&cSubheadingImage.png'
 const PrivacyPolicy = () => {
   return (
       <>
-          <SubHeaderSection SubheadingTitle={'Privacy Policy'} SubheadingDesc={'At Flow Wave, we value your trust and are committed to safeguarding your personal and business information. Our Privacy Policy outlines how we collect, use, and protect your data to ensure complete transparency and confidentiality in every interaction.'} alt={'termsAnd_condition_subheading_image'} width={'1200px'} src={TermAndConditionImage} />
+          <SubHeaderSection SubheadingTitle={'Privacy Policy'} SubheadingDesc={'Your privacy matters to us. We carefully handle your personal and business data to ensure transparency, security, and complete confidentiality in every interaction.'}  src={TermAndConditionImage} />
           
           <Container>
               <div className='flex flex-col gap-56 pt-100'>
