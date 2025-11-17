@@ -96,7 +96,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <SubHeaderSection alt={'Contact_sub_head_image'} src={ContactSubHedImage} SubheadingDesc={'Have questions or need assistance? Our team is here to help with product details, quotations, or partnership inquiries.'} SubheadingTitle={'Contact Flow Wave'} />
+            <SubHeaderSection alt={'Contact_sub_head_image'} src={ContactSubHedImage} SubheadingDesc={'Have questions or need support? Our team is ready to assist with product details, quotations, and partnership inquiries, ensuring clear guidance and a reliable experience'} SubheadingTitle={'Contact Flow Wave'} />
             <Container>
                 <div className='flex flex-col 600px:gap-52 gap-28 600px:pt-100 pt-40'>
                     <div className='flex 1024px:flex-row flex-col w-full 1024:gap-20 gap-28'>

@@ -7,7 +7,7 @@ import SectionBlock from '../components/SectionBlock'
 const TermAndCondition = () => {
   return (
     <>
-      <SubHeaderSection SubheadingTitle={'Terms & Conditions'} SubheadingDesc={'Welcome to Flow Wave. Please read our Terms & Conditions carefully to understand the rules, responsibilities, and policies that govern your use of our website and business services. By continuing to browse or interact with Flow Wave, you agree to abide by these terms.'} alt={'termsAnd_condition_subheading_image'} width={'1200px'} src={TermAndConditionImage} />
+      <SubHeaderSection SubheadingTitle={'Terms & Conditions'} SubheadingDesc={'Welcome to Flow Wave. Our Terms & Conditions outline the rules, responsibilities, and policies that guide your use of our website and services, ensuring clarity and a secure experience.'} alt={'termsAnd_condition_subheading_image'} width={'1200px'} src={TermAndConditionImage} />
       <Container>
         <div className='flex flex-col 600px:gap-52 gap-28 600px:pt-100 pt-40 '>
 

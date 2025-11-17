@@ -11,7 +11,7 @@ import TestimonialSection from '../components/AboutUs/TestimonialSection'
 const AboutUs = () => {
   return (
     <>
-      <SubHeaderSection SubheadingTitle={"About Flow Wave"} SubheadingDesc={"Engineering reliability and innovation across industries from precision instruments to agricultural excellence and quality spices."} src={about_us_header} alt={"About flow wave"}/>
+      <SubHeaderSection SubheadingTitle={"About Flow Wave"} SubheadingDesc={"Flow Wave delivers reliable engineering and innovative solutions across industries, from precision instruments to agricultural systems and quality spice production."} src={about_us_header} alt={"About flow wave"}/>
 
       <AboutStatsSection />
       <GlobalStandardsSection />
