@@ -64,7 +64,7 @@ useEffect(() => {
 
     if (progress < 1) {
       requestAnimationFrame(updateCount);
-    } else {n
+    } else {
       setCount(numericTarget); // ensure perfect end
     }
   };

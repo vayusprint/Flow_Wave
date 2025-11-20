@@ -9,6 +9,8 @@ import fssai from "../assets/images/fssai.png";
 import APEDA from "../assets/images/APEDA.png";
 import DGFT from "../assets/images/DGFT.png";
 import Udyam from "../assets/images/udyam.png";
+import india from "../assets/images/india.png";
+
 
 const certifications = [
   {
@@ -56,7 +58,7 @@ const certifications = [
   },
   {
     title: "GST Registration Certificate",
-    organisation_logo: fssai, // Replace with GST logo if available
+    organisation_logo: india, 
     alt_text: "GST logo",
     provided_by: "Government of India — Goods and Services Tax Department",
     description:
@@ -77,7 +79,7 @@ const Certification = () => {
       />
       <Container>
         <div className="w-full flex justify-center items-center mt-10">
-          <div className="lg:w-[calc(100%-200px)] sm:w-[calc(100%-60px)] w-full space-y-40">
+          <div className="lg:w-[calc(100%-200px)] sm:w-[calc(100%-60px)] w-full flex flex-col gap-40">
             {certifications.map((cert, index) => (
               <CertificationBlock key={index} {...cert} />
             ))}
