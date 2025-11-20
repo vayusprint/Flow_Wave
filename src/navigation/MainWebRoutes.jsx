@@ -9,6 +9,8 @@ import { ToastContainer } from 'react-toastify'
 import PrivacyPolicy from '../pages/PrivacyPolicy'
 import Certification from '../pages/Certification'
 import AboutUs from '../pages/AboutUs'
+import ProductDetail from '../pages/ProductDetail'
+import ProductList from '../pages/ProductList'
 
 const MainWebRoutes = () => {
   return (
@@ -28,10 +30,12 @@ const MainWebRoutes = () => {
         <Route element={<NavandFooter_Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/product-list" element={<ProductList />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/term-condition" element={<TermAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact-us" element={<ContactPage />} />
+          <Route path="/product-detail" element={<ProductDetail />} />
           {/* add more routes here */}
 
         </Route>
