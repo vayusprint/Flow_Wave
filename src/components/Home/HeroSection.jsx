@@ -45,22 +45,23 @@ const HeroSection = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex items-center justify-center gap-3 mt-32">
+            <div className="flex 450:flex-row flex-col items-center justify-center gap-3 mt-32">
 
-            <PrimaryButton title={"Explore"} pl={64} pr={64}/>
+              <PrimaryButton title={"Explore"} pl={64} pr={64} />
 
-        <button className='border-2 border-primary rounded-lg px-[64px] py-12'>
-            <p className='text-primary text-center font-medium font-montserrat text-20 leading-20'>Contact Us</p>
-        </button>
+              <button className='border-2 border-primary rounded-lg px-[64px] py-12'>
+                <p className='text-primary text-center font-medium font-montserrat text-20 leading-20'>Contact Us</p>
+              </button>
             </div>
           </div>
         </Container>
 
-                  {/* STATS SECTION – OVERLAP LIKE IMAGE */}
-      <div className="absolute bottom-[-20vh] z-20">
-        <AboutStatsSection />
-      </div>
+
       </section>
+              {/* STATS SECTION – OVERLAP LIKE IMAGE */}
+        <div className="lg:absolute bottom-[-40%] items-center flex justify-center w-full z-20">
+          <AboutStatsSection />
+        </div>
     </>
   );
 };
