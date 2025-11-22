@@ -122,5 +122,6 @@ body{
   --breakpoint-1024px : 1024px;
   --breakpoint-600px : 600px;
   --breakpoint-530 : 530px;
+  --breakpoint-450 : 450px;
   --breakpoint-428 : 428px;
 }

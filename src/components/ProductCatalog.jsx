@@ -6,7 +6,7 @@ const ProductCatalog = () => {
         <>
             <Container>
 
-                <div className="border-2 border-divider"></div>
+                <div className="border-2 border-divider mb-100"></div>
 
                 <div
                     className="
@@ -30,8 +30,8 @@ const ProductCatalog = () => {
                         </p>
 
                         <p className="font-montserrat font-medium text-18 leading-18 text-muted_text">
-                            Get a complete overview of Flow Wave’s product line in our detailed brochure. 
-                            Each product is built with precision, tested for performance, and trusted by leading 
+                            Get a complete overview of Flow Wave’s product line in our detailed brochure.
+                            Each product is built with precision, tested for performance, and trusted by leading
                             industries. Download the catalog to explore how we bring reliability to every project.
                         </p>
                     </div>
@@ -39,21 +39,24 @@ const ProductCatalog = () => {
                     {/* Button */}
                     <button
                         className="
-                            py-12 px-16 
-                            bg-muted_text 
-                            rounded-lg 
-                            font-montserrat 
-                            text-18 leading-18 font-medium 
-                            text-white
-                            w-full md:w-auto
-                            text-center
-                        "
+        py-12 px-16 cursor-pointer
+        bg-muted_text 
+        rounded-lg 
+        font-montserrat 
+        text-18 leading-18 font-medium 
+        text-white
+        w-full md:w-auto
+        text-center
+        transition-colors duration-300 
+        hover:bg-blue-500 hover:text-black
+    "
                     >
                         Download Catalog
                     </button>
+
                 </div>
 
-                <div className="border-2 border-divider"></div>
+                <div className="border-2 border-divider mt-100"></div>
 
             </Container>
         </>

@@ -7,7 +7,7 @@ const OurCompany = () => {
   return (
     <>
             <Container>
-                <section className="mt-[319px]">
+                <section className="lg:mt-[319px] mt-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-40">
                         {/* Image Section */}
                         <div className="w-full flex justify-center items-center">
