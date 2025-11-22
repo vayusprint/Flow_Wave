@@ -9,6 +9,7 @@ import AboutInfoCards from '../components/AboutUs/AboutInfoCards'
 import TestimonialSection from '../components/AboutUs/TestimonialSection'
 import ProductCatalog from '../components/ProductCatalog'
 import AboutusHero from '../components/AboutUs/AboutusHero'
+import FeaturedProduct from '../components/FeaturedProduct'
 
 const AboutUs = () => {
   return (
@@ -19,6 +20,7 @@ const AboutUs = () => {
       <GlobalStandardsSection />
       <AboutInfoCards />
       <TestimonialSection />
+      <FeaturedProduct hideHeading/>
       <ProductCatalog />
     </>
   )

@@ -8,6 +8,7 @@ import factory from "../assets/images/factory.jpg"
 import PrimaryButton from '../components/PrimaryButton'
 import GlobalStandardsSection from '../components/AboutUs/GlobalStandardsSection'
 import TestimonialSection from '../components/AboutUs/TestimonialSection'
+import FeaturedProduct from '../components/FeaturedProduct'
 const Home = () => {
   return (
     <>
@@ -21,6 +22,8 @@ const Home = () => {
         <div className='bg-black/70 w-full h-full absolute'></div>
         <img loading="lazy" className='w-full h-full object-cover' src={world} alt={"world"} />
       </div>
+
+      <FeaturedProduct />
 
       <GlobalStandardsSection />
 
