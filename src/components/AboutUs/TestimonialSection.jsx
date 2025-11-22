@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Container from '../Container'
+import { motion } from "framer-motion";
 
 import bg from "../../assets/images/buildingbg.png"
 
@@ -29,89 +30,104 @@ const testimonials = [
         desc: "Ask CDCR San Quintin State Prison 2008. We installed Purex dispensers throughout the prison to combat diseases...and it was a Roaring Success.",
     },
 ];
+const visibleCards = 3;
 const TestimonialSection = () => {
-    const [index, setIndex] = useState(0);
+   const [index, setIndex] = useState(0);
+  const trackRef = useRef(null);
 
-    // show 3 at a time
-    const visibleCards = 3;
+  const nextSlide = () => {
+    setIndex((prev) => Math.min(prev + 1, testimonials.length - visibleCards));
+  };
+  const prevSlide = () => {
+    setIndex((prev) => Math.max(prev - 1, 0));
+  };
 
-    const nextSlide = () => {
-        if (index < testimonials.length - visibleCards) {
-            setIndex(index + 1);
-        }
-    };
+  // x is percentage-based translate of the entire track
+  const xPercent = `-${index * (100 / visibleCards)}%`;
 
-    const prevSlide = () => {
-        if (index > 0) {
-            setIndex(index - 1);
-        }
-    };
-    return (
-        <>
-            <Container>
+  return (
+    <Container>
+      <div style={{ backgroundImage: `url(${bg})` }} className="bg-cover bg-center mt-100">
+        <h2 className="text-primary text-64 leading-64 font-semibold font-montserrat">
+          Trusted by Industry Leaders
+        </h2>
+
+<p className="text-black text-24 leading-24 font-normal max-w-7xl mt-4 font-montserrat">
+                         Explore our range of precision-engineered industrial components built for
+                         performance, durability, and reliability. Each product is designed to meet the
+                         highest standards, ensuring consistent quality across every application.
+                     </p>
+
+        <div className="mt-14 relative">
+          <div className="overflow-hidden">
+            <motion.div
+              ref={trackRef}
+              className="flex gap-8"
+              // animate to the percentage-based x; Framer accepts string percent
+              animate={{ x: xPercent }}
+              transition={{ type: "spring", stiffness: 120, damping: 22 }}
+              // enable drag-to-swipe horizontally
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.15}
+              onDragEnd={(event, info) => {
+                // simple threshold swipe to change index
+                const velocity = info.velocity.x;
+                const offset = info.offset.x;
+                const threshold = 100; // px
+                if (offset < -threshold || velocity < -500) nextSlide();
+                else if (offset > threshold || velocity > 500) prevSlide();
+              }}
+            >
+              {testimonials.map((item, i) => (
                 <div
-                    style={{ backgroundImage: `url(${bg})` }}
-                    className="bg-cover bg-center mt-100"
+                  key={i}
+                  // width: each card takes 1/visibleCards of the viewport inside track
+                  style={{ flex: `0 0 ${100 / visibleCards}%` }}
+                  className="shrink-0 bg-white rounded-[20px] px-40 py-[72px] shadow-sm border border-gray-100"
                 >
-                    <h2 className="text-primary text-64 leading-64 font-semibold font-montserrat">Trusted by Industry Leaders</h2>
-                    <p className="text-black text-24 leading-24 font-normal max-w-7xl mt-4 font-montserrat">
-                        Explore our range of precision-engineered industrial components built for
-                        performance, durability, and reliability. Each product is designed to meet the
-                        highest standards, ensuring consistent quality across every application.
-                    </p>
-
-                    <div className="mt-14 relative">
-
-                        {/* Cards Wrapper */}
-                        <div className="overflow-hidden">
-                            <div
-                                className="flex gap-8 transition-all duration-500"
-                                style={{ transform: `translateX(-${index * (100 / visibleCards)}%)` }}
-                            >
-                                {testimonials.map((item, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-full md:w-1/3 shrink-0 bg-white rounded-[20px] px-40 py-[72px] shadow-sm border border-gray-100"
-                                    >
-                                        <div className="flex gap-4 items-center">
-                                            <img
-                                                src={item.img}
-                                                className="w-50 h-50 object-cover rounded-full"
-                                            />
-                                            <div>
-                                                <h3 className="font-extrabold font-montserrat text-20 leading-20">{item.name}</h3>
-                                                <p className="text-muted_text text-20 leading-20 font-medium">{item.role}</p>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-bodytext leading-16 text-16 mt-5 font-poppins font-medium">
-                                            {item.desc}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Arrows */}
-                        <div className="flex justify-center gap-4 mt-10">
-                            <button
-                                onClick={prevSlide}
-                                className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center"
-                            >
-                                ‹
-                            </button>
-                            <button
-                                onClick={nextSlide}
-                                className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center"
-                            >
-                                ›
-                            </button>
-                        </div>
+                  <div className="flex gap-4 items-center">
+                    <img
+                      src={item.img}
+                      alt={`${item.name} avatar`}
+                      className="w-50 h-50 object-cover rounded-full"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 className="font-extrabold font-montserrat text-20 leading-20">{item.name}</h3>
+                      <p className="text-muted_text text-20 leading-20 font-medium">{item.role}</p>
                     </div>
+                  </div>
+                  <p className="text-bodytext leading-16 text-16 mt-5 font-poppins font-medium">
+                    {item.desc}
+                  </p>
                 </div>
-            </Container>
-        </>
-    )
+              ))}
+            </motion.div>
+          </div>
+
+          <div className="flex justify-center gap-4 mt-10 py-10">
+            <button
+              onClick={prevSlide}
+              disabled={index === 0}
+              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center disabled:opacity-40"
+              aria-label="Previous testimonials"
+            >
+              ‹
+            </button>
+            <button
+              onClick={nextSlide}
+              disabled={index >= testimonials.length - visibleCards}
+              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center disabled:opacity-40"
+              aria-label="Next testimonials"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
 }
 
 export default TestimonialSection
