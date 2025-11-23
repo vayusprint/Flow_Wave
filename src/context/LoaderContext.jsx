@@ -15,4 +15,5 @@ export const LoaderProvider = ({ children }) => {
     );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLoader = () => useContext(LoaderContext);
