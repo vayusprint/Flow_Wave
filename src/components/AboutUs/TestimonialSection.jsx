@@ -3,6 +3,7 @@ import Container from '../Container'
 import { motion } from "framer-motion";
 
 import bg from "../../assets/images/buildingbg.png"
+import Testimonials from '../Testimonials';
 
 const testimonials = [
     {
@@ -86,8 +87,8 @@ useEffect(() => {
           performance, durability, and reliability.
         </p>
 
-        <div className="mt-14 relative">
-
+        <div className="mt-14">
+{/* 
           <div className="overflow-hidden">
             <motion.div
               className="flex gap-8"
@@ -130,24 +131,8 @@ useEffect(() => {
                 </div>
               ))}
             </motion.div>
-          </div>
-
-          {/* removed icons → just clean minimal navigation */}
-          <div className="flex justify-center gap-4 mt-10 py-10">
-            <button
-              onClick={prevSlide}
-              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center"
-            >
-              ‹
-            </button>
-            <button
-              onClick={nextSlide}
-              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center"
-            >
-              ›
-            </button>
-          </div>
-
+          </div> */}
+<Testimonials />
         </div>
 
       </Container>
