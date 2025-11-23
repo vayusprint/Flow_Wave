@@ -1,7 +1,5 @@
 import React from 'react'
 import Container from '../components/Container'
-import PrimaryButton from '../components/PrimaryButton'
-import Productimages from '../assets/images/demoProductImage.png'
 import { Link, useParams } from 'react-router-dom'
 import QualitySvg from '../assets/icons/quality.svg'
 import DurabilitySvg from '../assets/icons/durability.svg'
@@ -12,106 +10,118 @@ import { products } from '../data/product'
 
 const ProductDetail = () => {
 
-
   const { id } = useParams()
-
   const product = products.find(product => product.id.toString() === id)
 
-  console.log(product.imageBackground);
-
-
   const product_feature_data = [
-    { id: 1, featureName:"Premium Quality" , icon:QualitySvg},
-    { id: 2, featureName:"High Durability" , icon:DurabilitySvg},
-    { id: 3, featureName:"Precision Design" , icon:PrecisionSvg},
-    { id: 4, featureName:"Easy Installation" , icon:InstallationSvg},
-    { id: 5, featureName:"Corrosion Resistant" , icon:ResistanceSvg},
+    { id: 1, featureName: "Premium Quality", icon: QualitySvg },
+    { id: 2, featureName: "High Durability", icon: DurabilitySvg },
+    { id: 3, featureName: "Precision Design", icon: PrecisionSvg },
+    { id: 4, featureName: "Easy Installation", icon: InstallationSvg },
+    { id: 5, featureName: "Corrosion Resistant", icon: ResistanceSvg },
   ]
 
   return (
     <>
       <Container>
-        <div className='w-full 600px:pt-100 pt-20 flex flex-col gap-60'>
+        <div className='w-full pt-12 sm:pt-20 md:pt-28 lg:pt-32 flex flex-col gap-56 md:gap-80 lg:gap-100'>
 
-          {/*---------------------------------------------- Product title ----------------------------------------------*/}
-          <div className='w-full flex flex-col 1024px:gap-48 428:gap-32 gap-24'>
-            <p className='text-primary text-64 leading-64 font-montserrat font-bold'> {product.title} </p>
+          {/* --------------------- Product Title --------------------- */}
+          <div className='w-full flex flex-col gap-4 md:gap-6'>
+            <p className='text-primary text-40 leading-40  font-montserrat font-bold text-center md:text-left'>
+              {product.title}
+            </p>
             <div className='w-full rounded-full h-[3px] bg-divider'></div>
           </div>
 
+          {/* -------------------- Product Detail --------------------- */}
+          <div className='flex flex-col lg:flex-row gap-10 lg:gap-20 w-full'>
 
-          {/*---------------------------------------------- Product Detail----------------------------------------------*/}
-          <div className='flex gap-20 w-full'>
-
-            <div style={{backgroundColor:product.imageBackground + "1A"}} className='w-full max-h-[652px] flex justify-center items-center py-[108px] px-[225px] rounded-[15px]'>
-              <img src={product.image} className='' />
+            {/* Product Image Box */}
+            <div
+              style={{ backgroundColor: product.imageBackground + "1A" }}
+              className='w-full lg:w-[55%] flex justify-center items-center p-6 sm:p-12 md:p-16 lg:p-20 xl:p-24 rounded-[15px]'
+            >
+              <img loading='lazy' src={product.image} className='w-[70%] sm:w-[55%] md:w-[50%] lg:w-[70%]' />
             </div>
 
-            <div className='flex flex-col gap-60'>
-              <div className='flex flex-col gap-28'>
-                <p className='font-quicksand font-medium text-24 leading-24 text-bodytext'>The Flow Wave Electromagnetic Flow Meter delivers accurate and reliable flow measurement for conductive liquids across a variety of industrial applications. Using advanced electromagnetic technology, it ensures precise readings without any pressure loss</p>
-                <p className='font-quicksand font-medium text-24 leading-24 text-bodytext'>Built with durable, corrosion-resistant materials, this flow meter performs efficiently in demanding environments such as water treatment, chemical processing, and food industries. Its digital display provides easy monitoring and seamless integration with control systems.</p>
-                <p className='font-quicksand font-medium text-24 leading-24 text-bodytext'>With no moving parts and minimal maintenance, the Flow Wave Electromagnetic Flow Meter offers long service life and consistent performance — making it a dependable choice for industries that value precision and durability.</p>
+            {/* Right Content */}
+            <div className='flex flex-col gap-10 w-full lg:w-[45%]'>
+
+              {/* Description */}
+              <div className='flex flex-col gap-5'>
+                <p className='font-montserrat  font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24  text-bodytext'>
+                  The Flow Wave Electromagnetic Flow Meter delivers accurate and reliable flow measurement for conductive liquids across a variety of industrial applications.
+                </p>
+                <p className='font-montserrat font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24 leading-relaxed text-bodytext'>
+                  Built with durable, corrosion-resistant materials, this flow meter performs efficiently in demanding environments.
+                </p>
+                <p className='font-montserrat  font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24 leading-relaxed text-bodytext'>
+                  With no moving parts and minimal maintenance, it offers a long service life and consistent performance.
+                </p>
               </div>
 
-              <div className='flex gap-8 w-full justify-between items-center'>
-                <a href="/Flow_wave_Product_Catalogue_2024.pdf" download="FlowWave-Catalog.pdf" className="w-full py-12 text-center text-18 leading-18 text-white font-montserrat font-medium bg-primary rounded-lg cursor-pointer">Download Catalog</a>
-                <Link to='/contact-us'  className='w-full'>
-                  <button className='w-full py-12 text-center text-18 leading-18 text-primary font-montserrat font-medium bg-transparent border border-primary rounded-lg cursor-pointer'>Get Product Inquiry</button>
+              {/* Buttons */}
+              <div className='flex flex-col sm:flex-row gap-4 w-full'>
+                <a
+                  href="/Flow_wave_Product_Catalogue_2024.pdf"
+                  download="FlowWave-Catalog.pdf"
+                  className="w-full py-3 sm:py-4 text-center text-16 sm:text-18 text-white font-montserrat font-medium bg-primary rounded-lg"
+                >
+                  Download Catalog
+                </a>
+
+                <Link to='/contact-us' className='w-full'>
+                  <button className='w-full py-3 sm:py-4 text-center text-16 sm:text-18 text-primary font-montserrat font-medium bg-transparent border border-primary rounded-lg'>
+                    Get Product Inquiry
+                  </button>
                 </Link>
               </div>
+
             </div>
 
           </div>
 
-
-          {/* --------------------------------------------- Product Feature ---------------------------------------------- */}
-          <div className='flex justify-between px-[64px] items-center bg-white rounded-[15px] border border-divider py-40'>
+          {/* -------------------- Product Features -------------------- */}
+          <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-48 px-24 py-40 bg-white rounded-[15px] border border-divider'>
             {product_feature_data.map((item) => (
-              <div key={item.id} className='flex flex-col gap-16 justify-center items-center'>
-                <img src={item.icon} className='max-w-40' />
-                <p className='font-quicksand font-semibold text-18 leading-18 text-muted_text '>{item.featureName}</p>
+              <div key={item.id} className='flex flex-col gap-3 justify-center items-center text-center'>
+                <img loading='lazy' src={item.icon} className='max-w-48 sm:max-w-56 md:max-w-56' />
+                <p className='font-quicksand font-semibold text-14 sm:text-16 md:text-18 text-muted_text'>{item.featureName}</p>
               </div>
             ))}
           </div>
 
-          {/* -------------------------------------------- Technical Specifications --------------------------------------- */}
-          <div className='flex flex-col gap-52'>
-            <p className='font-montserrat font-medium text-32 leading-32 text-primaryHeading'>Technical Specifications</p>
+          {/* ------------------ Technical Specifications ---------------- */}
+          <div className='flex flex-col gap-8'>
+            <p className='font-montserrat font-medium text-24 sm:text-28 md:text-32 text-primaryHeading'>
+              Technical Specifications
+            </p>
 
-            <div className='flex flex-col gap-24 p-32 bg-white rounded-[15px] border border-divider'>
-              <div className='flex flex-col gap-16'>
-                <div className='flex gap-20 w-full'>
-                  <p className='font-montserrat font-normal text-24 leading-24 text-muted_text w-full '>Parameter</p>
-                  <p className='font-montserrat font-normal text-24 leading-24 text-muted_text w-full '>Value</p>
-                </div>
-                <div className='w-full bg-divider h-0.5 rounded-full '></div>
+            <div className='flex flex-col gap-6 p-6 sm:p-8 md:p-10 bg-white rounded-[15px] border border-divider'>
+
+              {/* Header */}
+              <div className='flex justify-between text-left font-montserrat text-16 sm:text-18 md:text-20 text-muted_text'>
+                <p className='w-1/2'>Parameter</p>
+                <p className='w-1/2'>Value</p>
               </div>
+              <div className='w-full bg-divider h-px rounded-full'></div>
 
-              <div className='flex flex-col gap-24'>
-
-                {/* --------------------------------------- */}
+              {/* Data */}
+              <div className='flex flex-col gap-6'>
                 {product.specifications && product.specifications.length > 0 ? (
                   product.specifications.map((item, index) => (
-                    <div key={index} className="flex flex-col gap-24 ">
-
-                      <div className="flex gap-20 w-full">
-                        <p className="font-montserrat font-medium text-20 leading-20 text-black w-full">
-                          {item.parameter}
-                        </p>
-
-                        <p className="font-montserrat font-medium text-20 leading-20 text-black w-full">
-                          {item.value}
-                        </p>
+                    <div key={index} className="flex flex-col gap-4">
+                      <div className="flex justify-between text-left w-full">
+                        <p className="w-1/2 font-montserrat font-medium text-16 sm:text-18 md:text-20">{item.parameter}</p>
+                        <p className="w-1/2 font-montserrat font-medium text-16 sm:text-18 md:text-20">{item.value}</p>
                       </div>
-
-                      <div className="w-full bg-divider h-px rounded-full opacity-70"></div>
+                      <div className="w-full bg-divider h-px rounded-full opacity-60"></div>
                     </div>
                   ))
                 ) : (
                   <p>No specifications available</p>
                 )}
-
               </div>
             </div>
           </div>

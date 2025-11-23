@@ -16,6 +16,7 @@ const HeroSection = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
+            loading="lazy"
             src={heroImage}
             alt="Hero"
             className="w-full h-full object-cover"

@@ -11,7 +11,8 @@ const OurCompany = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-40">
                         {/* Image Section */}
                         <div className="w-full flex justify-center items-center">
-                            <img
+                          <img
+                              loading='lazy'
                                 src={workerImg}
                                 alt="Industrial Worker"
                                 className="relative w-full rounded-lg shadow-xl"

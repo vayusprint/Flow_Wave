@@ -200,22 +200,22 @@ const ContactPage = () => {
 
                                     {/* --------------------- Location ------------------------- */}
                                     <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
-                                        <img src={Location} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <img loading='lazy' src={Location} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
                                         <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center '>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
                                     </div>
                                     {/* --------------------- Email ------------------------- */}
                                     <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
-                                        <img src={Phone} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <img loading='lazy' src={Phone} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
                                         <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>+91  9265753274</p>
                                     </div>
                                     {/* --------------------- Time ------------------------- */}
                                     <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
-                                        <img src={Email} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <img loading='lazy' src={Email} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
                                         <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>flowwaveinstrument@gmail.com</p>
                                     </div>
                                     {/* --------------------- Location ------------------------- */}
                                     <div className='flex 530:flex-row flex-col 428:gap-24 gap-20 items-center'>
-                                        <img src={Time} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
+                                        <img loading='lazy' src={Time} alt='location_icon' className='1024px:w-[70px] 1024px:h-[70px] w-50 h-50' />
                                         <p className='font-montserrat font-normal text-20 leading-20 text-muted_text w-full 530:text-start text-center'>MON - FRI   08:00 AM -- 06:00 PM</p>
                                     </div>
                                 </div>

@@ -37,7 +37,7 @@ const NavbarFinal = () => {
         `}
             >
                 <div className="max-w-[1720px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 w-full h-full  flex justify-between items-center">
-                    <img src={Logo} alt="Logo" className="1024px:h-auto 428:h-60 h-40 w-auto" />
+                    <img loading="lazy" src={Logo} alt="Logo" className="1024px:h-auto 428:h-60 h-40 w-auto" />
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex gap-80 items-center">
@@ -70,7 +70,8 @@ const NavbarFinal = () => {
 
                     {/* Mobile Menu Icon */}
                     <div className="md:hidden flex items-center">
-                        <img
+                        <img 
+                            loading="lazy"
                             src={MenuIcon}
                             alt="Menu"
                             className="h-28 w-28 cursor-pointer"
@@ -93,7 +94,8 @@ const NavbarFinal = () => {
                     } flex flex-col p-6 gap-6`}
             >
                 <div className="flex justify-end">
-                    <img
+                    <img 
+                        loading="lazy"
                         src={CancelIcon}
                         alt="Close"
                         className="h-28 w-28 cursor-pointer"

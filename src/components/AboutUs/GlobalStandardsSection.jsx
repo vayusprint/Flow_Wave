@@ -39,6 +39,7 @@ const GlobalStandardsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mt-100 place-items-center">
           {certifications.map((item, index) => (
             <img
+              loading='lazy'
               key={index}
               src={item.src}
               alt={item.alt}

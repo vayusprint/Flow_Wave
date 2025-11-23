@@ -14,7 +14,7 @@ const CertificationBlock = ({title,provided_by,organisation_logo,alt_text, descr
                 </div>
                 <div className="space-y-[18px]">
                     <h4 className=' font-montserrat font-medium text-24 leading-24 text-black'>Organization Logo</h4>
-                    <img src={organisation_logo} alt={alt_text} />
+                    <img loading='lazy' src={organisation_logo} alt={alt_text} />
                 </div>
                 <div className="space-y-[18px]">
                     <h4 className=' font-montserrat font-medium text-24 leading-24 text-black'>Description</h4>

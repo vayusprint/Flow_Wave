@@ -20,6 +20,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="FlowWave Logo"
+                loading="lazy"
                 className="mx-auto md:mx-0 w-[170px] md:w-[150px] lg:w-[180px] xl:w-[200px] h-auto transition-all duration-300"
               />
               <p className="mt-6 font-montserrat text-base md:text-24 text-bodytext leading-relaxed">
@@ -32,27 +33,27 @@ const Footer = () => {
               <div className="flex items-center md:justify-start justify-center gap-4 mt-6">
                 {/* Facebook */}
                 <a href="#" className="hover:opacity-80 transition">
-                  <img src={Facebook} alt="Facebook" className=" max-w-[90%]" />
+                  <img loading="lazy" src={Facebook} alt="Facebook" className=" max-w-[90%]" />
                 </a>
 
                 {/* Instagram */}
                 <a href="#" className="hover:opacity-80 transition">
-                  <img src={Instagram} alt="Instagram" className=" max-w-[90%]" />
+                  <img loading="lazy" src={Instagram} alt="Instagram" className=" max-w-[90%]" />
                 </a>
 
                 {/* LinkedIn */}
                 <a href="#" className="hover:opacity-80 transition">
-                  <img src={Linkdin} alt="Linkdin" className=" max-w-[90%]" />
+                  <img loading="lazy" src={Linkdin} alt="Linkdin" className=" max-w-[90%]" />
                 </a>
 
                 {/* Whatsapp */}
                 <a href="#" className="hover:opacity-80 transition">
-                  <img src={Whatsapp} alt="Whatsapp" className=" max-w-[90%]" />
+                  <img loading="lazy" src={Whatsapp} alt="Whatsapp" className=" max-w-[90%]" />
                 </a>
 
                 {/* Youtube */}
                 <a href="#" className="hover:opacity-80 transition">
-                  <img src={Youtube} alt="Youtube" className=" max-w-[90%]" />
+                  <img loading="lazy" src={Youtube} alt="Youtube" className=" max-w-[90%]" />
                 </a>
               </div>
             </div>
