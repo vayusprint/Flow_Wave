@@ -2,14 +2,22 @@ import React from 'react'
 import Container from '../components/Container'
 import PrimaryButton from '../components/PrimaryButton'
 import Productimages from '../assets/images/demoProductImage.png'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import QualitySvg from '../assets/icons/quality.svg'
 import DurabilitySvg from '../assets/icons/durability.svg'
 import InstallationSvg from '../assets/icons/installation.svg'
 import PrecisionSvg from '../assets/icons/presicion.svg'
 import ResistanceSvg from '../assets/icons/resistance.svg'
+import { products } from '../data/product'
 
 const ProductDetail = () => {
+
+
+  const { id } = useParams()
+
+  const product = products.find(product => product.id.toString() === id)
+
+  console.log(product.imageBackground);
 
 
   const product_feature_data = [
@@ -27,7 +35,7 @@ const ProductDetail = () => {
 
           {/*---------------------------------------------- Product title ----------------------------------------------*/}
           <div className='w-full flex flex-col 1024px:gap-48 428:gap-32 gap-24'>
-            <p className='text-primary text-64 leading-64 font-montserrat font-bold'>Electromagnetic Flow Meter</p>
+            <p className='text-primary text-64 leading-64 font-montserrat font-bold'> {product.title} </p>
             <div className='w-full rounded-full h-[3px] bg-divider'></div>
           </div>
 
@@ -35,8 +43,8 @@ const ProductDetail = () => {
           {/*---------------------------------------------- Product Detail----------------------------------------------*/}
           <div className='flex gap-20 w-full'>
 
-            <div className='w-full max-h-[652px] bg-[#173165]/10 flex justify-center items-center py-[108px] px-[225px] rounded-[15px] '>
-              <img src={Productimages} className='' />
+            <div style={{backgroundColor:product.imageBackground + "1A"}} className='w-full max-h-[652px] flex justify-center items-center py-[108px] px-[225px] rounded-[15px]'>
+              <img src={product.image} className='' />
             </div>
 
             <div className='flex flex-col gap-60'>
@@ -48,7 +56,7 @@ const ProductDetail = () => {
 
               <div className='flex gap-8 w-full justify-between items-center'>
                 <a href="/Flow_wave_Product_Catalogue_2024.pdf" download="FlowWave-Catalog.pdf" className="w-full py-12 text-center text-18 leading-18 text-white font-montserrat font-medium bg-primary rounded-lg cursor-pointer">Download Catalog</a>
-                <Link to='/contact-us' className='w-full'>
+                <Link to='/contact-us'  className='w-full'>
                   <button className='w-full py-12 text-center text-18 leading-18 text-primary font-montserrat font-medium bg-transparent border border-primary rounded-lg cursor-pointer'>Get Product Inquiry</button>
                 </Link>
               </div>
@@ -83,13 +91,27 @@ const ProductDetail = () => {
               <div className='flex flex-col gap-24'>
 
                 {/* --------------------------------------- */}
-                <div className='flex flex-col gap-24'>
-                  <div className='flex gap-20 w-full'>
-                    <p className='font-montserrat font-medium text-20 leading-20 text-black w-full '>Size Range</p>
-                    <p className='font-montserrat font-medium text-20 leading-20 text-black w-full '>15 mm to 600 mm</p>
-                  </div>
-                  <div className='w-full bg-divider h-px rounded-full opacity-70 '></div>
-                </div>
+                {product.specifications && product.specifications.length > 0 ? (
+                  product.specifications.map((item, index) => (
+                    <div key={index} className="flex flex-col gap-24 ">
+
+                      <div className="flex gap-20 w-full">
+                        <p className="font-montserrat font-medium text-20 leading-20 text-black w-full">
+                          {item.parameter}
+                        </p>
+
+                        <p className="font-montserrat font-medium text-20 leading-20 text-black w-full">
+                          {item.value}
+                        </p>
+                      </div>
+
+                      <div className="w-full bg-divider h-px rounded-full opacity-70"></div>
+                    </div>
+                  ))
+                ) : (
+                  <p>No specifications available</p>
+                )}
+
               </div>
             </div>
           </div>

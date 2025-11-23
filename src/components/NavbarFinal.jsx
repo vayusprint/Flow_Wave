@@ -1,39 +1,3 @@
-// import React from "react";
-// import FlowWaveLogo from "../assets/images/logo.png";
-// import MenuIcon from "../assets/icons/menu_icon.svg";
-// import CancelIcon from "../assets/icons/cancel_icon.svg";
-// import Logo from '../assets/images/logo.png'
-
-// const NavbarFinal = () => {
-
-//     return (
-//         <>
-//             <div className="w-full h-[150px] bg-[#E9F2F8] ">
-//                 <div className="max-w-[1720px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 h-full">
-//                     <div className="flex justify-between items-center w-full h-full">
-//                         <img src={Logo}  />
-
-
-//                         <div className="flex gap-80 justify-evenly items-center">
-//                             <p className="font-quicksand font-semibold text-24 leading-24 text-primary">Home</p>
-//                             <p className="font-quicksand font-semibold text-24 leading-24 text-primary">About Us</p>
-//                             <p className="font-quicksand font-semibold text-24 leading-24 text-primary">Products</p>
-//                             <p className="font-quicksand font-semibold text-24 leading-24 text-primary">Certifications</p>
-//                             <button className="text-center py-12 px-24 rounded-lg bg-primary text-white font-quicksand font-ml text-24 leading-24 ">
-//                                 Contact Us
-//                             </button>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </>
-//     )
-// };
-
-
-// export default NavbarFinal;
-
-
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/logo.png";
 import MenuIcon from "../assets/icons/menu_icon.svg";
@@ -148,7 +112,7 @@ const NavbarFinal = () => {
                                 About Us
                             </p>
                         </Link>
-                        <Link to='/products' onClick={handleMobileLinkClick}>
+                        <Link to='/product-list' onClick={handleMobileLinkClick}>
                             <p className="font-quicksand font-semibold text-24 text-primary cursor-pointer">
                                 Products
                             </p>

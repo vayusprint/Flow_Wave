@@ -6,7 +6,7 @@ const ProductCatalog = () => {
         <>
             <Container>
 
-                <div className="border-2 border-divider mb-100"></div>
+                <div className="border-2 border-divider opacity-50 600px:mb-100 mb-48 rounded-full"></div>
 
                 <div
                     className="
@@ -56,7 +56,7 @@ const ProductCatalog = () => {
 
                 </div>
 
-                <div className="border-2 border-divider mt-100"></div>
+                {/* <div className="border-2 border-divider mt-100"></div> */}
 
             </Container>
         </>

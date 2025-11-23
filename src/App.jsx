@@ -1,9 +1,26 @@
+// import React from 'react'
+// import MainWebRoutes from './navigation/MainWebRoutes'
+
+// const App = () => {
+//   return (
+//     <MainWebRoutes />
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
+import { LoaderProvider } from './context/LoaderContext'
 import MainWebRoutes from './navigation/MainWebRoutes'
+import Loader from './components/Loader'
 
 const App = () => {
   return (
-    <MainWebRoutes />
+    <LoaderProvider>  
+      <Loader />
+      <MainWebRoutes />
+    </LoaderProvider>
   )
 }
 

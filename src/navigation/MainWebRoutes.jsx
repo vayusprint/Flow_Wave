@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import NotFoundPage from '../pages/NotFoundPage'
 import Home from '../pages/Home'
 import NavandFooter_Layout from '../layouts/NavandFooter_Layout'
@@ -11,11 +11,24 @@ import Certification from '../pages/Certification'
 import AboutUs from '../pages/AboutUs'
 import ProductDetail from '../pages/ProductDetail'
 import ProductList from '../pages/ProductList'
+import { useLoader } from '../context/LoaderContext'
 
 const MainWebRoutes = () => {
+  const location = useLocation();
+  const { showLoader, hideLoader } = useLoader();
+
+  useEffect(() => {
+    showLoader();
+
+    const timer = setTimeout(() => {
+      hideLoader();
+    }, 3000); // minimum 3 seconds
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
   return (
-    <BrowserRouter>
-      
+    <>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -35,16 +48,12 @@ const MainWebRoutes = () => {
           <Route path="/term-condition" element={<TermAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact-us" element={<ContactPage />} />
-          <Route path="/product-detail" element={<ProductDetail />} />
-          {/* add more routes here */}
-
+          <Route path="/product-detail/:id" element={<ProductDetail />} />
         </Route>
 
-
-        {/* fallback for unknown routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
+    </>
   )
 }
 
