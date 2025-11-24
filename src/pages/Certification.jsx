@@ -79,7 +79,7 @@ const Certification = () => {
       />
       <Container>
         <div className="w-full flex justify-center items-center mt-10">
-          <div className="lg:w-[calc(100%-200px)] sm:w-[calc(100%-60px)] w-full flex flex-col gap-40">
+          <div className=" w-full flex flex-col gap-40">
             {certifications.map((cert, index) => (
               <CertificationBlock key={index} {...cert} />
             ))}
