@@ -2,8 +2,18 @@ import React from 'react'
 import Container from '../Container'
 import workerImg from "../../assets/images/worker_aboutus.png"
 import PrimaryButton from '../PrimaryButton'
+import { useNavigate } from 'react-router-dom'
 
 const OurCompany = () => {
+
+
+    const navigate = useNavigate()
+
+    const handleNavigate = () => {
+        navigate('/about-us')
+    }
+
+
   return (
     <>
             <Container>
@@ -51,7 +61,7 @@ const OurCompany = () => {
                                 component we produce.
                             </p>
 
-                            <PrimaryButton title={"Know more..."} pl={24} pr={24}/>
+                          <PrimaryButton title={"Know more..."} pl={24} pr={24} onClick={() => handleNavigate()}/>
                         
                         </div>
                     </div>

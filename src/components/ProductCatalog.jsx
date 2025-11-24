@@ -37,7 +37,9 @@ const ProductCatalog = () => {
                     </div>
 
                     {/* Button */}
-                    <button
+                    <a
+                        href="/Flow_wave_Product_Catalogue_2024.pdf"
+                        download="FlowWave-Catalog.pdf"
                         className="
         py-12 px-16 cursor-pointer
         bg-muted_text 
@@ -48,11 +50,10 @@ const ProductCatalog = () => {
         w-full md:w-auto
         text-center
         transition-colors duration-300 
-        hover:bg-blue-500 hover:text-black
     "
                     >
                         Download Catalog
-                    </button>
+                    </a>
 
                 </div>
 
