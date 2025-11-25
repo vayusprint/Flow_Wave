@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='w-full h-0.5 bg-divider rounded-full mt-100'>
 
         </div>
-        <div className='w-full flex gap-10 py-60 '>
+        <div className='w-full flex justify-between bg-amber-400 py-60 '>
 
           {/* Right Content */}
 
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
 
-          <div className='w-full flex gap-40'>
+          <div className='w-full flex'>
             <div className='w-[30%]  flex flex-col gap-36'>
               <p className='font-montserrat font-medium text-primary text-24 leading-24'>Quick Links</p>
 
@@ -67,7 +67,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className='w-full flex flex-col gap-36'>
+            <div className='flex flex-col gap-36'>
               <p className='font-montserrat font-medium text-primary text-24 leading-24'>Contacts information</p>
 
               <div className='flex flex-col gap-24'>
