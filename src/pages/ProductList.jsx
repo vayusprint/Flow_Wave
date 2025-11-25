@@ -6,6 +6,7 @@ import ProductHeader from '../assets/images/product_header.png'
 import ProductCard from '../components/ProductCard'
 import ProductCatalog from '../components/ProductCatalog'
 import { useNavigate } from 'react-router-dom'
+import InstrumentIcon from "../assets/icons/instrument.svg"
 
 const ProductList = () => {
 
@@ -35,7 +36,7 @@ const ProductList = () => {
           <div className='w-full flex flex-col 1024px:gap-100 600px:gap-60 gap-48'>
             <div className='flex flex-col gap-28'>
               <div className='flex gap-12'>
-                {/* <img src={InstrumentIcon} alt='instrument_Icon' /> */}
+                <img src={InstrumentIcon} alt='instrument_Icon' /> 
                 <p className='font-montserrat text-40 leading-40 font-medium text-primaryHeading'>Instrument</p>
               </div>
               <div className='w-full h-0.5 bg-divider rounded-full '></div>
