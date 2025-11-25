@@ -17,7 +17,10 @@ const NavbarFinal = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const handleMobileLinkClick = () => setMenuOpen(false);
+    const handleMobileLinkClick = () => {
+        setMenuOpen(false);
+        window.scroll(0, 0)
+    }
 
     return (
         <>
@@ -39,27 +42,27 @@ const NavbarFinal = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex gap-40 items-center">
-                        <Link to="/">
+                        <Link to="/" onClick={() => window.scroll(0,0)}>
                             <p className="font-quicksand font-semibold text-18 text-primary cursor-pointer">
                                 Home
                             </p>
                         </Link>
-                        <Link to="/about-us">
+                        <Link to="/about-us" onClick={() => window.scroll(0,0)}>
                             <p className="font-quicksand font-semibold text-18 text-primary cursor-pointer">
                                 About Us
                             </p>
                         </Link>
-                        <Link to="/product-list">
+                        <Link to="/product-list" onClick={() => window.scroll(0,0)}>
                             <p className="font-quicksand font-semibold text-18 text-primary cursor-pointer">
                                 Products
                             </p>
                         </Link>
-                        <Link to="/certification">
+                        <Link to="/certification" onClick={() => window.scroll(0,0)}>
                             <p className="font-quicksand font-semibold text-18 text-primary cursor-pointer">
                                 Certifications
                             </p>
                         </Link>
-                        <Link to="/contact-us">
+                        <Link to="/contact-us" onClick={() => window.scroll(0,0)}>
                             <button className="py-2.5 px-5 rounded-lg bg-primary text-white font-quicksand font-ml text-18">
                                 Contact Us
                             </button>

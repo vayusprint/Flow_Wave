@@ -10,6 +10,8 @@ import GlobalStandardsSection from '../components/AboutUs/GlobalStandardsSection
 import TestimonialSection from '../components/AboutUs/TestimonialSection'
 import FeaturedProduct from '../components/FeaturedProduct'
 import { useNavigate } from 'react-router-dom'
+
+
 const Home = () => {
 
 

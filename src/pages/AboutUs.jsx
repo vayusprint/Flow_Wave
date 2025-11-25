@@ -21,7 +21,6 @@ const AboutUs = () => {
       <AboutInfoCards />
       <TestimonialSection />
       <FeaturedProduct hideHeading/>
-      <ProductCatalog />
     </>
   )
 }

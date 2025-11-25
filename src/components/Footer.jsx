@@ -13,61 +13,66 @@ const Footer = () => {
     <>
       <Container>
 
-        <div className='w-full h-0.5 bg-divider rounded-full mt-100'>
+        <div className='w-full h-0.5 bg-divider rounded-full mt-100'></div>
 
-        </div>
-        <div className='w-full flex justify-between bg-amber-400 py-60 '>
+        <div className='w-full flex md:flex-row flex-col md:justify-between justify-center items-center py-32 sm:py-40 md:py-60 gap-32 md:gap-0 sm:gap-40 '>
 
           {/* Right Content */}
 
-          <div className='w-2/3 flex flex-col gap-40'>
-            <img src={Logo} className=" h-[68px] w-[256px] " alt='logo' />
+          <div className='w-full md:w-2/3 flex flex-col gap-24 sm:gap-40 md:items-start items-center'>
+            <img src={Logo} className="w-[200px] h-auto md:w-[220px] md:h-auto lg:w-[256px] lg:h-auto " alt='logo' />
 
-            <p className='text-start text-16 leading-16 font-montserrat font-normal text-bodytext'>Flow Wave is a forward-thinking company dedicated to delivering innovative and sustainable solutions in the solar and hardware industry. </p>
+            <p className='text-16 leading-16 font-montserrat font-normal text-bodytext text-center md:text-start '>Flow Wave is a forward-thinking company dedicated to delivering innovative and sustainable solutions in the solar and hardware industry. </p>
 
             <div className='flex gap-16'>
-              <a href="#" className="hover:opacity-80 transition">
+              {/* <a href="#" className="hover:opacity-80 transition">
                 <img loading="lazy" src={Facebook} alt="Youtube" className=" max-w-[90%]" />
-              </a>
-              <a href="#" className="hover:opacity-80 transition">
+              </a> */}
+              <a href="https://www.instagram.com/flow_wave_9924?igsh=Mjd4YjBtY3Npejho" className="hover:opacity-80 transition">
                 <img loading="lazy" src={Instagram} alt="Youtube" className=" max-w-[90%]" />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="https://www.linkedin.com/in/flow-wave-instrument-31718335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:opacity-80 transition">
                 <img loading="lazy" src={Linkdin} alt="Youtube" className=" max-w-[90%]" />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a
+                href="https://wa.me/9876543210?text=Hello%20Flow%20Wave%20Team!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition"
+              >
                 <img loading="lazy" src={Whatsapp} alt="Youtube" className=" max-w-[90%]" />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              {/* <a href="#" className="hover:opacity-80 transition">
                 <img loading="lazy" src={Youtube} alt="Youtube" className=" max-w-[90%]" />
-              </a>
+              </a> */}
             </div>
           </div>
 
 
-          <div className='w-full flex'>
-            <div className='w-[30%]  flex flex-col gap-36'>
-              <p className='font-montserrat font-medium text-primary text-24 leading-24'>Quick Links</p>
+          {/* Left Content */}
+          <div className='w-full flex flex-col md:flex-row md:justify-end gap-20 sm:gap-28 md:gap-0'>
+            <div className='md:w-[30%] w-full  flex flex-col gap-28 sm:gap-36 text-center md:text-start '>
+              <p className='font-montserrat font-medium text-primary text-24 leading-24 '>Quick Links</p>
 
-              <div className='flex flex-col gap-24'>
-                <Link>
+              <div className='flex flex-col gap-16 sm:gap-24'>
+                <Link to='/' onClick={() => window.scroll(0,0)}>
                   <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Home</p>
                 </Link>
-                <Link>
+                <Link to='/about-us' onClick={() => window.scroll(0, 0)}>
                   <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>About Us</p>
                 </Link>
-                <Link>
+                <Link to='/product-list' onClick={() => window.scroll(0, 0)}>
                   <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Products</p>
                 </Link>
-                <Link>
+                <Link to='/certification' onClick={() => window.scroll(0, 0)}>
                   <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Certifications</p>
                 </Link>
-                <Link>
+                <Link to='/contact-us' onClick={() => window.scroll(0, 0)}>
                   <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Contact Us</p>
                 </Link>
               </div>
             </div>
-            <div className='flex flex-col gap-36'>
+            <div className='flex flex-col gap-28 sm:gap-36 text-center md:text-start '>
               <p className='font-montserrat font-medium text-primary text-24 leading-24'>Contacts information</p>
 
               <div className='flex flex-col gap-24'>

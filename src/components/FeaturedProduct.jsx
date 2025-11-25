@@ -2,6 +2,7 @@ import React from 'react'
 import Container from "../components/Container"
 import { products } from '../data/product'
 import ProductCard from './ProductCard'
+import ProductCatalog from './ProductCatalog'
 
 const FeaturedProduct = ({ hideHeading = false }) => {
   return (
@@ -20,7 +21,7 @@ const FeaturedProduct = ({ hideHeading = false }) => {
             {!hideHeading && (
               <p className=' font-montserrat font-normal text-24 leading-24 max-w-7xl pt-36'>Explore our range of precision-engineered industrial components built for performance, durability, and reliability. Each product is designed to meet the highest standards, ensuring consistent quality across every application.</p>
             )}
-            <div className='w-full grid pt-100 1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 '>
+            <div className='w-full grid  1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 '>
 
               {
                 products.map((item) => (
@@ -29,6 +30,11 @@ const FeaturedProduct = ({ hideHeading = false }) => {
               }
             </div>
           </div>
+        </div>
+
+
+        <div className='pt-40 sm:pt-60  lg:pt-100'>
+          <ProductCatalog />
         </div>
       </Container>
     </>
