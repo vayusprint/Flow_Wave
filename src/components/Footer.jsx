@@ -23,7 +23,7 @@ const Footer = () => {
           <div className='w-2/3 flex flex-col gap-40'>
             <img src={Logo} className=" h-[68px] w-[256px] " alt='logo' />
 
-            <p className='text-start text-20 leading-20 font-montserrat font-normal text-bodytext'>Flow Wave is a forward-thinking company dedicated to delivering innovative and sustainable solutions in the solar and hardware industry. </p>
+            <p className='text-start text-16 leading-16 font-montserrat font-normal text-bodytext'>Flow Wave is a forward-thinking company dedicated to delivering innovative and sustainable solutions in the solar and hardware industry. </p>
 
             <div className='flex gap-16'>
               <a href="#" className="hover:opacity-80 transition">
@@ -51,19 +51,19 @@ const Footer = () => {
 
               <div className='flex flex-col gap-24'>
                 <Link>
-                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Home</p>
+                  <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Home</p>
                 </Link>
                 <Link>
-                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>About Us</p>
+                  <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>About Us</p>
                 </Link>
                 <Link>
-                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Products</p>
+                  <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Products</p>
                 </Link>
                 <Link>
-                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Certifications</p>
+                  <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Certifications</p>
                 </Link>
                 <Link>
-                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Contact Us</p>
+                  <p className='font-montserrat font-normal text-16 leading-16 text-bodytext hover:text-primary hover:underline'>Contact Us</p>
                 </Link>
               </div>
             </div>
@@ -71,10 +71,10 @@ const Footer = () => {
               <p className='font-montserrat font-medium text-primary text-24 leading-24'>Contacts information</p>
 
               <div className='flex flex-col gap-24'>
-                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Address : </span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</p>
-                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Phone : </span>+91 98765 43210</p>
-                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Email : </span>flowwave@gmail.com</p>
-                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Working Hours : </span> Mon – Sat | 9:00 AM – 6:00 PM</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Address : </span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Phone : </span>+91 98765 43210</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Email : </span>flowwave@gmail.com</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Working Hours : </span> Mon – Sat | 9:00 AM – 6:00 PM</p>
               </div>
             </div>
           </div>
