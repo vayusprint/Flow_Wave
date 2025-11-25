@@ -11,8 +11,8 @@ const ProductCard = ({ alt, srcImage, imageBg, productName, productDescription, 
             </div>
             <div className='flex flex-col gap-24'>
                 <div className='flex flex-col gap-16'>
-                    <p className='font-montserrat font-medium text-32 text-primaryHeading'>{productName}</p>
-                    <p className='font-montserrat font-medium text-16 text-muted_text'>{productDescription}</p>
+                    <p className='font-montserrat font-medium text-24 leading-24 text-primaryHeading'>{productName}</p>
+                    <p className='font-montserrat font-medium text-16 leading-16 text-muted_text'>{productDescription}</p>
                 </div>
 
                 <div className=' border-2 border-divider rounded-full'></div>

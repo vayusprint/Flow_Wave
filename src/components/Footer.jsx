@@ -1,128 +1,86 @@
-import React from "react";
-import logo from "../assets/images/logo.png";
+import React from 'react'
+import Container from './Container'
+import Logo from "../assets/images/logo_2.png";
 import Instagram from "../assets/icons/Instagram.svg"
 import Facebook from "../assets/icons/Facebook.svg"
 import Linkdin from "../assets/icons/Linkdin.svg"
 import Whatsapp from "../assets/icons/Whatsapp.svg"
 import Youtube from "../assets/icons/Youtube.svg"
-import Container from "./Container";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <>
       <Container>
-        <footer className="w-full mt-100 border-t border-gray-200">
-          {/* Top Section */}
-          <div className="flex flex-col md:flex-row justify-between gap-10 py-10">
-            {/* Left: Logo + Description + Socials */}
-            <div className="md:w-1/2 max-w-xl text-center md:text-left">
-              <img
-                src={logo}
-                alt="FlowWave Logo"
-                loading="lazy"
-                className="mx-auto md:mx-0 w-[170px] md:w-[150px] lg:w-[180px] xl:w-[200px] h-auto transition-all duration-300"
-              />
-              <p className="mt-6 font-montserrat text-base md:text-24 text-bodytext leading-relaxed">
-                Flow Wave is a forward-thinking company dedicated to delivering
-                innovative and sustainable solutions in the solar and hardware
-                industry.
-              </p>
 
-              {/* Social Media Icons */}
-              <div className="flex items-center md:justify-start justify-center gap-4 mt-6">
-                {/* Facebook */}
-                <a href="#" className="hover:opacity-80 transition">
-                  <img loading="lazy" src={Facebook} alt="Facebook" className=" max-w-[90%]" />
-                </a>
+        <div className='w-full h-0.5 bg-divider rounded-full mt-100'>
 
-                {/* Instagram */}
-                <a href="#" className="hover:opacity-80 transition">
-                  <img loading="lazy" src={Instagram} alt="Instagram" className=" max-w-[90%]" />
-                </a>
+        </div>
+        <div className='w-full flex gap-10 py-60 '>
 
-                {/* LinkedIn */}
-                <a href="#" className="hover:opacity-80 transition">
-                  <img loading="lazy" src={Linkdin} alt="Linkdin" className=" max-w-[90%]" />
-                </a>
+          {/* Right Content */}
 
-                {/* Whatsapp */}
-                <a href="#" className="hover:opacity-80 transition">
-                  <img loading="lazy" src={Whatsapp} alt="Whatsapp" className=" max-w-[90%]" />
-                </a>
+          <div className='w-2/3 flex flex-col gap-40'>
+            <img src={Logo} className=" h-[68px] w-[256px] " alt='logo' />
 
-                {/* Youtube */}
-                <a href="#" className="hover:opacity-80 transition">
-                  <img loading="lazy" src={Youtube} alt="Youtube" className=" max-w-[90%]" />
-                </a>
+            <p className='text-start text-20 leading-20 font-montserrat font-normal text-bodytext'>Flow Wave is a forward-thinking company dedicated to delivering innovative and sustainable solutions in the solar and hardware industry. </p>
+
+            <div className='flex gap-16'>
+              <a href="#" className="hover:opacity-80 transition">
+                <img loading="lazy" src={Facebook} alt="Youtube" className=" max-w-[90%]" />
+              </a>
+              <a href="#" className="hover:opacity-80 transition">
+                <img loading="lazy" src={Instagram} alt="Youtube" className=" max-w-[90%]" />
+              </a>
+              <a href="#" className="hover:opacity-80 transition">
+                <img loading="lazy" src={Linkdin} alt="Youtube" className=" max-w-[90%]" />
+              </a>
+              <a href="#" className="hover:opacity-80 transition">
+                <img loading="lazy" src={Whatsapp} alt="Youtube" className=" max-w-[90%]" />
+              </a>
+              <a href="#" className="hover:opacity-80 transition">
+                <img loading="lazy" src={Youtube} alt="Youtube" className=" max-w-[90%]" />
+              </a>
+            </div>
+          </div>
+
+
+          <div className='w-full flex gap-40'>
+            <div className='w-[30%]  flex flex-col gap-36'>
+              <p className='font-montserrat font-medium text-primary text-24 leading-24'>Quick Links</p>
+
+              <div className='flex flex-col gap-24'>
+                <Link>
+                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Home</p>
+                </Link>
+                <Link>
+                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>About Us</p>
+                </Link>
+                <Link>
+                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Products</p>
+                </Link>
+                <Link>
+                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Certifications</p>
+                </Link>
+                <Link>
+                  <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'>Contact Us</p>
+                </Link>
               </div>
             </div>
+            <div className='w-full flex flex-col gap-36'>
+              <p className='font-montserrat font-medium text-primary text-24 leading-24'>Contacts information</p>
 
-            {/* Right: Links + Contact */}
-            <div className="flex flex-wrap md:flex-nowrap gap-20 md:gap-100">
-              {/* Quick Links */}
-              <div>
-                <h2 className="font-montserrat font-semibold text-24 leading-24 text-primary mb-4">
-                  Quick Links
-                </h2>
-                <ul className="space-y-3 text-bodytext text-base text-24 leading-24">
-                  <li>
-                    <Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about-us" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-primary transition">
-                      Products
-                    </a>
-                  </li>
-                  <li>
-                    <Link to="/certification" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
-                      Certifications
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)} className="hover:text-primary transition">
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Contact Info */}
-              <div>
-                <h2 className="font-montserrat font-semibold text-24 leading-24 text-primary mb-4">
-                  Contact Information
-                </h2>
-                <ul className="space-y-3 text-bodytext text-base text-24 leading-24">
-                  <li className="flex flex-wrap gap-1">
-                    <span className="font-semibold">Address:</span>{" "}
-                    <span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</span>
-                  </li>
-                  <li className="flex flex-wrap gap-1">
-                    <span className="font-semibold">Phone:</span>{" "}
-                    <span>+91 98765 43210</span>
-                  </li>
-                  <li className="flex flex-wrap gap-1">
-                    <span className="font-semibold">Email:</span>{" "}
-                    <span>flowwave@gmail.com</span>
-                  </li>
-                  <li className="flex flex-wrap gap-1">
-                    <span className="font-semibold">Working Hours:</span>
-                    <span>Mon – Sat | 9:00 AM – 6:00 PM</span>
-                  </li>
-
-                </ul>
+              <div className='flex flex-col gap-24'>
+                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Address : </span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</p>
+                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Phone : </span>+91 98765 43210</p>
+                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Email : </span>flowwave@gmail.com</p>
+                <p className='font-montserrat font-normal text-20 leading-20 text-bodytext'> <span className='font-montserrat font-semibold text-20 leading-20 text-bodytext '>Working Hours : </span> Mon – Sat | 9:00 AM – 6:00 PM</p>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
       </Container>
+
       <div className="w-full bg-[#0083BF1A] text-gray-500 text-18 leading-18 py-4">
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center gap-3">
@@ -160,7 +118,7 @@ const Footer = () => {
         </Container>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

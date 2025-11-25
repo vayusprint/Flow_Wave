@@ -36,7 +36,7 @@ const ProductList = () => {
             <div className='flex flex-col gap-28'>
               <div className='flex gap-12'>
                 {/* <img src={InstrumentIcon} alt='instrument_Icon' /> */}
-                <p className='font-montserrat text-50 leading-50 font-medium text-primaryHeading'>Instrument</p>
+                <p className='font-montserrat text-40 leading-40 font-medium text-primaryHeading'>Instrument</p>
               </div>
               <div className='w-full h-0.5 bg-divider rounded-full '></div>
             </div>

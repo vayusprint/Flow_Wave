@@ -10,7 +10,7 @@ const Loader = () => {
     return (
         <div className="fixed h-screen w-screen inset-0 flex justify-center items-center bg-white z-9999">
             <div className="flex flex-col gap-16 justify-center items-center">
-                <img loading="lazy" alt="loader_svg" className=" md:w-100 md:h-100 w-56 h-56" src={LoaderFlow_Wave} /> 
+                <img loading="lazy" alt="loader_svg" className=" md:w-60 md:h-60 w-56 h-56" src={LoaderFlow_Wave} /> 
                 <div class="loader"></div>
             </div>
         </div>
