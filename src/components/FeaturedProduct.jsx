@@ -21,7 +21,7 @@ const FeaturedProduct = ({ hideHeading = false }) => {
             {!hideHeading && (
               <p className=' font-montserrat font-normal text-24 leading-24 max-w-7xl pt-36'>Explore our range of precision-engineered industrial components built for performance, durability, and reliability. Each product is designed to meet the highest standards, ensuring consistent quality across every application.</p>
             )}
-            <div className='w-full grid  1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 '>
+            <div className='w-full grid pt-40 sm:pt-60 md:pt-80 lg:pt-100 1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 '>
 
               {
                 products.map((item) => (
