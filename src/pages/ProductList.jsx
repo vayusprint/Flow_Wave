@@ -7,16 +7,21 @@ import ProductCard from '../components/ProductCard'
 import ProductCatalog from '../components/ProductCatalog'
 import { useNavigate } from 'react-router-dom'
 import InstrumentIcon from "../assets/icons/instrument.svg"
+import Agriculture from "../assets/icons/agriculture.svg"
 
 const ProductList = () => {
 
   const [instrumentList, setInstrumentList] = useState([])
+  const [agriculture, setAgriculture] = useState([])
   const navigate = useNavigate()
 
   useEffect(() => {
 
     const instrumentProducts = products.filter((item) => item.category.toLocaleLowerCase() === 'instrument')
     setInstrumentList(instrumentProducts)
+
+    const agricultureproducts = products.filter((item) => item.category.toLocaleLowerCase() === 'agriculture')
+    setAgriculture(agricultureproducts)
 
   }, [])
 
@@ -48,6 +53,28 @@ const ProductList = () => {
                 instrumentList.map((item) => (
                   <ProductCard key={item.id} alt={item.alt} imageBg={item.imageBackground} srcImage={item.image} productName={item.title} productDescription={item.shortDesc} onClick={() => handleNavigate(item.id)} />
                 ))
+              }
+            </div>
+          </div>
+          
+          {/* ------------------------------- Instruments --------------------------------------------- */}
+          <div className='w-full flex flex-col 1024px:gap-100 600px:gap-60 gap-48'>
+            <div className='flex flex-col gap-28'>
+              <div className='flex gap-12'>
+                <img src={Agriculture} alt='instrument_Icon' /> 
+                <p className='font-montserrat text-40 leading-40 font-medium text-primaryHeading'>Agriculture</p>
+              </div>
+              <div className='w-full h-0.5 bg-divider rounded-full '></div>
+            </div>
+
+            {/* --------------------- Product List --------------------------------------- */}
+            <div className='w-full grid 1024px:grid-cols-3 428:grid-cols-2 grid-cols-1 1024px:gap-[64px] 428:gap-40 gap-32 '>
+              {
+                agriculture.length > 0 ? (
+                  agriculture.map((item) => (
+                    <ProductCard key={item.id} alt={item.alt} imageBg={item.imageBackground} srcImage={item.image} productName={item.title} productDescription={item.shortDesc} onClick={() => handleNavigate(item.id)} />
+                  ))
+                ) : (<p className='text-24 leading-24 text-bodytext font-montserrat font-semibold'>-- --</p>)
               }
             </div>
           </div>
