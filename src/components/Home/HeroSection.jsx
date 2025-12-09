@@ -70,7 +70,7 @@ const HeroSection = () => {
 
       </section>
               {/* STATS SECTION – OVERLAP LIKE IMAGE */}
-        <div className="lg:absolute bottom-[-40%] items-center flex justify-center w-full z-20">
+        <div className="lg:absolute bottom-[-50%] items-center flex justify-center w-full z-20">
           <AboutStatsSection />
         </div>
     </>

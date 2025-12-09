@@ -35,7 +35,7 @@ const Footer = () => {
                 <img loading="lazy" src={Linkdin} alt="Youtube" className=" max-w-[90%]" />
               </a>
               <a
-                href="https://wa.me/9876543210?text=Hello%20Flow%20Wave%20Team!"
+                href="https://wa.me/9265753274?text=Hello%20Flow%20Wave%20Team!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition"
@@ -76,8 +76,8 @@ const Footer = () => {
               <p className='font-montserrat font-medium text-primary text-24 leading-24'>Contacts information</p>
 
               <div className='flex flex-col gap-24'>
-                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Address : </span>Plot No. 21, Green Tech Park, Ahmedabad, Gujarat, India</p>
-                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Phone : </span>+91 98765 43210</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Address : </span>AB / 309 Nil Nandish Complex , Behind Narayan Wadi , Opp Vatsalya Vatika , Bill , Vadodara , Gujarat , India</p>
+                <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Phone : </span>+91 9265753274</p>
                 <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Email : </span>flowwave@gmail.com</p>
                 <p className='font-montserrat font-normal text-16 leading-16 text-bodytext'> <span className='font-montserrat font-semibold text-16 leading-16 text-bodytext '>Working Hours : </span> Mon – Sat | 9:00 AM – 6:00 PM</p>
               </div>

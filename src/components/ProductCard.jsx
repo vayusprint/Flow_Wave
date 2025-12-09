@@ -4,7 +4,7 @@ import PrimaryButton from './PrimaryButton'
 const ProductCard = ({ alt, srcImage, imageBg, productName, productDescription, onClick }) => {
     
     return (
-        <div className='flex flex-col gap-28 600:p-32 p-16 bg-white rounded-[15px] border border-divider'>
+        <div className='cursor-pointer flex flex-col gap-28 600:p-32 p-16 bg-white rounded-[15px] border border-divider'>
             <div className='relative rounded-lg p-12 flex justify-center items-center'>
                 <div className='absolute inset-0 rounded-2xl opacity-10' style={{ backgroundColor: imageBg }} ></div>
                 <img loading="lazy" alt={alt} src={srcImage} className='relative z-10 object-contain w-full h-auto max-w-[300px] max-h-[300px]' />
@@ -18,7 +18,7 @@ const ProductCard = ({ alt, srcImage, imageBg, productName, productDescription, 
                 <div className=' border-2 border-divider rounded-full'></div>
 
                 
-                <PrimaryButton onClick={onClick} title={"Product Details"} />
+                <PrimaryButton  onClick={onClick} title={"Product Details"} />
                 
             </div>
         </div>

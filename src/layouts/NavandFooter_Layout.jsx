@@ -16,7 +16,7 @@ const NavandFooter_Layout = () => {
 
       <div className="fixed z-100 bottom-0 right-0 w-60 sm:w-80 lg:w-100 m-10">
         <a
-          href="https://wa.me/9876543210?text=Hello%20Flow%20Wave%20Team!"
+          href="https://wa.me/9265753274?text=Hello%20Flow%20Wave%20Team!"
           target="_blank"
           rel="noopener noreferrer"
         >

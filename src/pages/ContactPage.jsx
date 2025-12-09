@@ -9,6 +9,7 @@ import Phone from '../assets/icons/phone.svg'
 import Email from '../assets/icons/email.svg'
 import SubHeaderSection from '../components/SubHeaderSection';
 import ContactSubHedImage from '../assets/images/contactSubhedImage.png'
+import axios from "axios";
 
 const ContactPage = () => {
 
@@ -28,10 +29,11 @@ const ContactPage = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let newErrors = {};
 
+        let newErrors = {};
         if (!formData.fullName) newErrors.fullName = "Full Name is required";
         if (!formData.email) newErrors.email = "Email is required";
         if (!formData.phoneNumber) newErrors.phoneNumber = "Phone Number is required";
@@ -41,42 +43,23 @@ const ContactPage = () => {
 
         setErrors(newErrors);
 
-        if (Object.keys(newErrors).length === 0) {
-            try {
-                const response = await fetch(import.meta.env.VITE_GOOGLE_SCRIPT_URL, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(formData),
-                });
+        if (Object.keys(newErrors).length > 0) return;
 
-                const result = await response.json();
+        try {
+            const response = await axios.post("http://your-backend-url/api/send-contact", formData);
 
-                if (result.status === "success") {
-                    toast.success(result.message);
-
-                    setFormData({
-                        fullName: "",
-                        email: "",
-                        phoneNumber: "",
-                        company: "",
-                        subject: "",
-                        message: "",
-                    });
-                    setErrors({});
-                } else {
-                    toast.error("Failed to send inquiry. Try again.");
-                }
-            } catch (error) {
-                console.error("Submission error:", error);
-                toast.error("Something went wrong! Try again.");
+            if (response.data.success) {
+                toast.success("Your message has been sent!");
+            } else {
+                toast.error("Failed to send message");
             }
-        } else {
-            toast.error("Please fill all required fields before submitting!");
+        } catch (error) {
+            toast.error("Server error! Try again later.");
         }
     };
 
 
-    const companyNumber = "+919876543210"; // Your company number
+    const companyNumber = "+919265753274"; // Your company number
 
     const handleCall = () => {
         // Open default dialer with number
@@ -159,7 +142,7 @@ const ContactPage = () => {
                                     <InputField
                                         type='text'
                                         label={"Subject / Inquiry Type"}
-                                        placeholder={"Select Your Inquiry Type"}
+                                        placeholder={"Enter your Subject or Inquiry Type"}
                                         required={true}
                                         name={'subject'}
                                         onChange={handleChange}

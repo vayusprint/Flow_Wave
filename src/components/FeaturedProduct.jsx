@@ -3,8 +3,18 @@ import Container from "../components/Container"
 import { products } from '../data/product'
 import ProductCard from './ProductCard'
 import ProductCatalog from './ProductCatalog'
+import { useNavigate } from 'react-router-dom'
+import PrimaryButton from './PrimaryButton'
 
 const FeaturedProduct = ({ hideHeading = false }) => {
+  const navigate = useNavigate()
+
+  const handleNavigate = (id) => {
+    console.log(id);
+    navigate(`/product-detail/${id}`)
+    window.scroll({top:0 , behavior:"instant"})
+  }
+
   return (
     <>
       <Container>
@@ -21,14 +31,28 @@ const FeaturedProduct = ({ hideHeading = false }) => {
             {!hideHeading && (
               <p className=' font-montserrat font-normal text-24 leading-24 max-w-7xl pt-36'>Explore our range of precision-engineered industrial components built for performance, durability, and reliability. Each product is designed to meet the highest standards, ensuring consistent quality across every application.</p>
             )}
-            <div className='w-full grid pt-40 sm:pt-60 md:pt-80 lg:pt-100 1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 '>
+            <div className='w-full grid pt-40 sm:pt-60 md:pt-80 lg:pt-100 1024px:grid-cols-3 grid-cols-1 1024px:gap-32 428:gap-40 gap-32 mb-5'>
 
               {
-                products.map((item) => (
-                  <ProductCard alt={item.alt} imageBg={item.imageBackground} srcImage={item.image} productName={item.title} productDescription={item.shortDesc} />
+                products.slice(0, 3).map((item) => (
+                  <ProductCard 
+                    alt={item.alt} 
+                    imageBg={item.imageBackground} 
+                    srcImage={item.image} 
+                    productName={item.title} 
+                    productDescription={item.shortDesc} 
+                    onClick={() => handleNavigate(item.id)} 
+                  />
                 ))
               }
+
+
             </div>
+
+            <div className='w-full flex items-center justify-center '>
+              <PrimaryButton onClick={()=>navigate('/product-list')} title={"Explore our products"} pl={24} pr={24}/>
+            </div>
+
           </div>
         </div>
 
