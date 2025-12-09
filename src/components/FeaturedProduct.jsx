@@ -49,7 +49,7 @@ const FeaturedProduct = ({ hideHeading = false }) => {
 
             </div>
 
-            <div className='w-full flex items-center justify-center '>
+            <div className='w-full flex items-center justify-center  lg:pt-60 md:pt-40 sm:pt-32 pt-28'>
               <PrimaryButton onClick={()=>navigate('/product-list')} title={"Explore our products"} pl={24} pr={24}/>
             </div>
 
