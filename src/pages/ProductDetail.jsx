@@ -12,6 +12,8 @@ const ProductDetail = () => {
 
   const { id } = useParams()
   const product = products.find(product => product.id.toString() === id)
+  console.log(product.longDesc);
+
 
   const product_feature_data = [
     { id: 1, featureName: "Premium Quality", icon: QualitySvg },
@@ -50,15 +52,14 @@ const ProductDetail = () => {
 
               {/* Description */}
               <div className='flex flex-col gap-5'>
-                <p className='font-montserrat  font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24  text-bodytext'>
-                  The Flow Wave Electromagnetic Flow Meter delivers accurate and reliable flow measurement for conductive liquids across a variety of industrial applications.
-                </p>
-                <p className='font-montserrat font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24 leading-relaxed text-bodytext'>
-                  Built with durable, corrosion-resistant materials, this flow meter performs efficiently in demanding environments.
-                </p>
-                <p className='font-montserrat  font-medium text-16 sm:text-18 md:text-20 lg:text-22 xl:text-24 leading-relaxed text-bodytext'>
-                  With no moving parts and minimal maintenance, it offers a long service life and consistent performance.
-                </p>
+                {
+                  product.longDesc.length > 0 ?
+                    (product.longDesc.map((i, index) => (
+                      <p key={index} className='font-montserrat  font-medium text-16 sm:text-18 md:text-20 lg:text-22   text-bodytext'>
+                        {i}
+                      </p>
+                    ))) : (<p className='text-24 leading-24 text-bodytext font-montserrat font-semibold'>-- --</p>)
+                }      
               </div>
 
               {/* Buttons */}
@@ -66,13 +67,13 @@ const ProductDetail = () => {
                 <a
                   href="/Flow_wave_Product_Catalogue_2024.pdf"
                   download="FlowWave-Catalog.pdf"
-                  className="w-full py-3 sm:py-4 text-center text-16 sm:text-18 text-white font-montserrat font-medium bg-primary rounded-lg"
+                  className="w-full py-2 sm:py-3 text-center text-16 sm:text-18 text-white font-montserrat font-medium bg-primary rounded-lg"
                 >
                   Download Catalog
                 </a>
 
                 <Link to='/contact-us' className='w-full'>
-                  <button className='w-full py-3 sm:py-4 text-center text-16 sm:text-18 text-primary font-montserrat font-medium bg-transparent border border-primary rounded-lg'>
+                  <button className='w-full py-2 sm:py-3 text-center text-16 sm:text-18 text-primary font-montserrat font-medium bg-transparent border border-primary rounded-lg'>
                     Get Product Inquiry
                   </button>
                 </Link>

@@ -1,3 +1,4 @@
+
 import Product_1 from '../assets/productImg/1.png'
 import Product_2 from '../assets/productImg/2.png'
 import Product_3 from '../assets/productImg/3.png'
@@ -35,6 +36,64 @@ import Product_31 from '../assets/productImg/31.png'
 import Product_32 from '../assets/productImg/32.png'
 import Product_33 from '../assets/productImg/33.png'
 
+
+import Rice_1 from '../assets/riceImage/1.png'
+import Rice_2 from '../assets/riceImage/2.png'
+import Rice_3 from '../assets/riceImage/3.png'
+import Rice_4 from '../assets/riceImage/4.png'
+import Rice_5 from '../assets/riceImage/5.png'
+import Rice_6 from '../assets/riceImage/6.png'
+import Rice_7 from '../assets/riceImage/7.png'
+import Rice_8 from '../assets/riceImage/8.png'
+import Rice_9 from '../assets/riceImage/9.png'
+import Rice_10 from '../assets/riceImage/10.png'
+
+import Rice_11 from '../assets/riceImage/11.png'
+import Rice_12 from '../assets/riceImage/12.png'
+import Rice_13 from '../assets/riceImage/13.png'
+import Rice_14 from '../assets/riceImage/14.png'
+import Rice_15 from '../assets/riceImage/15.png'
+import Rice_16 from '../assets/riceImage/16.png'
+import Rice_17 from '../assets/riceImage/17.png'
+import Rice_18 from '../assets/riceImage/18.png'
+import Rice_19 from '../assets/riceImage/19.png'
+import Rice_20 from '../assets/riceImage/20.png'
+
+import Rice_21 from '../assets/riceImage/21.png'
+import Rice_22 from '../assets/riceImage/22.png'
+import Rice_23 from '../assets/riceImage/23.png'
+import Rice_24 from '../assets/riceImage/24.png'
+import Rice_25 from '../assets/riceImage/25.png'
+import Rice_26 from '../assets/riceImage/26.png'
+import Rice_27 from '../assets/riceImage/27.png'
+import Rice_28 from '../assets/riceImage/28.png'
+import Rice_29 from '../assets/riceImage/29.png'
+import Rice_30 from '../assets/riceImage/30.png'
+
+import Rice_31 from '../assets/riceImage/31.png'
+import Rice_32 from '../assets/riceImage/32.png'
+import Rice_33 from '../assets/riceImage/33.png'
+
+import Rice_34 from '../assets/riceImage/34.png'
+import Rice_35 from '../assets/riceImage/35.png'
+import Rice_36 from '../assets/riceImage/36.png'
+import Rice_37 from '../assets/riceImage/37.png'
+import Rice_38 from '../assets/riceImage/38.png'
+import Rice_39 from '../assets/riceImage/39.png'
+import Rice_40 from '../assets/riceImage/40.png'
+import Rice_41 from '../assets/riceImage/41.png'
+import Rice_42 from '../assets/riceImage/42.png'
+import Rice_43 from '../assets/riceImage/43.png'
+
+import Rice_44 from '../assets/riceImage/44.png'
+import Rice_45 from '../assets/riceImage/45.png'
+import Rice_46 from '../assets/riceImage/46.png'
+import Rice_47 from '../assets/riceImage/47.png'
+import Rice_48 from '../assets/riceImage/48.png'
+import Rice_49 from '../assets/riceImage/49.png'
+import Rice_50 from '../assets/riceImage/50.png'
+
+
 export const productImage = [
     Product_1,
     Product_2,
@@ -69,6 +128,59 @@ export const productImage = [
     Product_31,
     Product_32,
     Product_33,
+]
+export const riceImage = [
+    Rice_1,
+    Rice_2,
+    Rice_3,
+    Rice_4,
+    Rice_5,
+    Rice_6,
+    Rice_7,
+    Rice_8,
+    Rice_9,
+    Rice_10,
+    Rice_11,
+    Rice_12,
+    Rice_13,
+    Rice_14,
+    Rice_15,
+    Rice_16,
+    Rice_17,
+    Rice_18,
+    Rice_19,
+    Rice_20,
+    Rice_21,
+    Rice_22,
+    Rice_23,
+    Rice_24,
+    Rice_25,
+    Rice_26,
+    Rice_27,
+    Rice_28,
+    Rice_29,
+    Rice_30,
+    Rice_31,
+    Rice_32,
+    Rice_33,
+    Rice_33,
+    Rice_34,
+    Rice_35,
+    Rice_36,
+    Rice_37,
+    Rice_38,
+    Rice_39,
+    Rice_40,
+    Rice_41,
+    Rice_42,
+    Rice_43,
+    Rice_44,
+    Rice_45,
+    Rice_46,
+    Rice_47,
+    Rice_48,
+    Rice_49,
+    Rice_50,
 ]
 
 // Background Colors Array
@@ -1193,4 +1305,1158 @@ export const products = [
     { parameter: "Cleaning Compatibility", value: "CIP (Clean-in-Place) / SIP (Sterilize-in-Place)" }
   ]
   },
-];
+  {
+    "id": "34",
+    "category": "agriculture",
+    "title": "Traditional Raw Rice",
+    "image": riceImage[0],
+    "alt": "Traditional Raw Rice",
+    "imageBackground": bgColors[0],
+    "shortDesc": "The original Basmati rice, known for its traditional growing methods. Each grain cooks perfectly, offering an irresistible aroma and taste.",
+    "longDesc": [
+      "This is the **original Basmati rice** grown in the traditional way. It is a prized variety in the Indian Conventional Rice category.",
+      "Every single grain of this rice cooks to perfection. Its delightful aroma and flavor make it hard to resist and are a staple in many dishes.",
+      "The rice features an **average grain length of 7.30 MM**. It is cherished for its robust flavor and high-quality culinary performance."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.30 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "35",
+    "category": "agriculture",
+    "title": "Traditional Sella Rice",
+    "image": riceImage[2],
+    "alt": "Traditional Sella Rice",
+    "imageBackground": bgColors[2],
+    "shortDesc": "A parboiled version of the original Basmati rice. Sella rice retains more nutrients and cooks up separate and fluffy.",
+    "longDesc": [
+      "Traditional Sella Rice is the parboiled version of the original Basmati. This process helps it to maintain its structure during cooking.",
+      "It offers the same delightful aroma and quality as the raw variant. The parboiling process improves its milling and cooking characteristics.",
+      "The rice has an **average grain length of 7.30 MM**. It’s perfect for dishes that require firm, non-sticky, and well-separated grains."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.30 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "36",
+    "category": "agriculture",
+    "title": "1718 Raw Rice",
+    "image": riceImage[3],
+    "alt": "1718 Raw Rice",
+    "imageBackground": bgColors[3],
+    "shortDesc": "A new Basmati variety, Pusa 1718 is a modified version of Pusa 1121. It resists crop flattening and has a high comparative yield.",
+    "longDesc": [
+      "Pusa **1718 Raw Rice** is an improved version of the iconic Pusa 1121. It's designed for better crop management and higher yields.",
+      "This variety is resistant to bacterial blight and prevents flattening from heavy rain or strong winds. It ensures stable, reliable harvests.",
+      "Featuring an **average grain length of 8.40 MM**, it cooks beautifully. It is known for its excellent aroma and superior cooking quality."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "37",
+    "category": "agriculture",
+    "title": "1718 Steam Rice",
+    "image": riceImage[4],
+    "alt": "1718 Steam Rice",
+    "imageBackground": bgColors[4],
+    "shortDesc": "This variant is partially cooked with steam and dried before milling. The steaming process gives it a brilliant white color and firm texture.",
+    "longDesc": [
+      "The 1718 Steam Rice is treated with steam before being dried. This process strengthens the grain and reduces the chances of breakage.",
+      "It retains the superior characteristics of the 1718 variety. The grains remain separate and fluffy upon cooking, perfect for biryani.",
+      "The rice maintains an **average grain length of 8.40 MM**. It is highly valued in the market for its premium appearance and texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "38",
+    "category": "agriculture",
+    "title": "1718 Sella Rice",
+    "image": riceImage[5],
+    "alt": "1718 Sella Rice",
+    "imageBackground": bgColors[5],
+    "shortDesc": "Parboiled version of 1718, offering firmness and separate grains after cooking. The process locks in nutrients and provides a longer shelf life.",
+    "longDesc": [
+      "The 1718 Sella Rice is parboiled and then milled, which contributes to its firmness. This makes it a very easy rice to cook.",
+      "Parboiling also helps the grains to stand up to long cooking times. This is ideal for specific regional and international recipes.",
+      "It boasts an **average grain length of 8.40 MM**. Sella rice is chosen when separate, non-sticky, and firm rice grains are desired."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "39",
+    "category": "agriculture",
+    "title": "1718 Golden Sella Rice",
+    "image": riceImage[6],
+    "alt": "1718 Golden Sella Rice",
+    "imageBackground": bgColors[6],
+    "shortDesc": "A premium variety of parboiled 1718 rice with a rich golden hue. It offers the longest grains and a superior cooking experience.",
+    "longDesc": [
+      "This rice gets its golden color from an advanced parboiling technique. This process significantly improves its texture and cooking qualities.",
+      "The **average grain length is 8.35 MM**, making it a premium choice. The golden color is a mark of its superior processing method.",
+      "It is favored for its fluffy texture and pleasant aroma after cooking. This rice is perfect for special occasions and gourmet dishes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "40",
+    "category": "agriculture",
+    "title": "1509 Steam Rice",
+    "image": riceImage[7],
+    "alt": "1509 Steam Rice",
+    "imageBackground": bgColors[7],
+    "shortDesc": "A long grain Basmati variety that is cheaper than 1121 but offers a higher yield. It is known for its excellent fluffiness and pleasant aroma.",
+    "longDesc": [
+      "The 1509 Steam Rice is a variety that boasts the longest grain among non-conventional types. It offers a great balance of quality and cost.",
+      "This rice is steamed before milling to give it a brilliant white color. It is non-sticky and offers an excellent fluffiness upon cooking.",
+      "With an **average grain length of 8.40 MM**, it’s a popular choice. It provides a distinct aroma and superior grain separation."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "41",
+    "category": "agriculture",
+    "title": "1509 Sella Rice",
+    "image": riceImage[8],
+    "alt": "1509 Sella Rice",
+    "imageBackground": bgColors[8],
+    "shortDesc": "The parboiled version of 1509 rice. This variety is known for its cooking stability, non-sticky nature, and great value for money.",
+    "longDesc": [
+      "1509 Sella Rice is parboiled, which improves its firmness and cooking quality. The grains remain separate and are very long after cooking.",
+      "The parboiling process makes the rice resilient. It is able to withstand overcooking better than the raw or steam variants.",
+      "It has an **average grain length of 8.40 MM**. This rice is often used in catering and for large-scale cooking due to its consistency."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "42",
+    "category": "agriculture",
+    "title": "1509 Golden Sella Rice",
+    "image": riceImage[9],
+    "alt": "1509 Golden Sella Rice",
+    "imageBackground": bgColors[9],
+    "shortDesc": "The gold standard of 1509 rice, parboiled to a rich golden color. It offers superior fluffiness and a delightful cooking experience.",
+    "longDesc": [
+      "1509 Golden Sella Rice is parboiled using a process that imparts a distinct golden hue. This technique also preserves more nutrients.",
+      "It is praised for its long grain length and excellent non-stick properties. It gives a premium look and texture to any dish.",
+      "The **average grain length is 8.35 MM**. It’s highly sought after for its attractive color and reliable, fluffy cooked texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "43",
+    "category": "agriculture",
+    "title": "1401 Steam Rice",
+    "image": riceImage[10],
+    "alt": "1401 Steam Rice",
+    "imageBackground": bgColors[10],
+    "shortDesc": "An improved version of PUSA hybrid Basmati rice. It cooks up non-sticky, fluffy, and carries an authentic flavor and fragrance.",
+    "longDesc": [
+      "The 1401 Steam Rice is an enhanced hybrid Basmati variety. The steaming process gives it a clean, white appearance and great texture.",
+      "Upon cooking, it becomes fluffy and remains separate. It has an authentic Basmati aroma and a good, high nutritional value.",
+      "It measures an **average grain length of 7.70 MM**. This rice is an excellent everyday choice for its fragrance and non-sticky quality."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.70 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "44",
+    "category": "agriculture",
+    "title": "1401 Sella Rice",
+    "image": riceImage[11],
+    "alt": "1401 Sella Rice",
+    "imageBackground": bgColors[11],
+    "shortDesc": "The parboiled version of 1401 rice. It maintains a firm, non-sticky texture, and is highly valued for its superior cooking consistency.",
+    "longDesc": [
+      "1401 Sella Rice is parboiled, enhancing its structural integrity. This prevents grains from breaking or sticking together during cooking.",
+      "It retains the delightful fragrance and flavor of the 1401 variety. Sella is often preferred in large cooking environments for reliability.",
+      "The rice has an **average grain length of 7.70 MM**. It’s a good choice for those who value firm and distinct rice grains in their meal."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.70 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "45",
+    "category": "agriculture",
+    "title": "1401 Golden Sella Rice",
+    "image": riceImage[12],
+    "alt": "1401 Golden Sella Rice",
+    "imageBackground": bgColors[12],
+    "shortDesc": "Premium golden parboiled 1401 rice. It combines great visual appeal with an aromatic, fluffy, and non-sticky cooked texture.",
+    "longDesc": [
+      "This is the premium, golden-hued parboiled variant of 1401 rice. The deep color is achieved through a controlled parboiling process.",
+      "It offers an authentic, aromatic fragrance and excellent cooking quality. The grains are fluffy, separate, and visually appealing.",
+      "With an **average grain length of 7.65 MM**, it is perfect for gourmet dishes. It ensures a consistent, high-quality result every time."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.65 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "46",
+    "category": "agriculture",
+    "title": "Sugandha Raw Rice",
+    "image": riceImage[13],
+    "alt": "Sugandha Raw Rice",
+    "imageBackground": bgColors[13],
+    "shortDesc": "A long non-Basmati rice grown in North India, known for its good degree of natural aroma. Widely used for daily meal preparations.",
+    "longDesc": [
+      "Sugandha Raw Rice is a popular long non-Basmati variety. It is cultivated primarily in the northern regions of India.",
+      "It possesses a pleasing natural aroma, making it suitable for both daily cooking and fine dining. It is a very versatile grain.",
+      "It has an **average grain length of 7.90 MM**. This rice is a cost-effective choice that provides satisfactory taste and cooking quality."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "47",
+    "category": "agriculture",
+    "title": "Sugandha Steam Rice",
+    "image": riceImage[14],
+    "alt": "Sugandha Steam Rice",
+    "imageBackground": bgColors[14],
+    "shortDesc": "Steamed Sugandha rice, offering a bright white color and an improved, separate grain texture. Ideal for diverse culinary applications.",
+    "longDesc": [
+      "This is the steamed variant of Sugandha non-Basmati rice. Steaming locks in the grain's starch, aiding in non-stickiness upon cooking.",
+      "It maintains a good degree of natural aroma, characteristic of the Sugandha variety. The grains are long and aesthetically pleasing.",
+      "The rice features an **average grain length of 7.90 MM**. It is a great option for households and restaurants that value texture and aroma."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "48",
+    "category": "agriculture",
+    "title": "Sugandha Sella Rice",
+    "image": riceImage[15],
+    "alt": "Sugandha Sella Rice",
+    "imageBackground": bgColors[15],
+    "shortDesc": "Parboiled Sugandha rice, providing extra firmness and superior grain separation. It is highly reliable for bulk and commercial cooking.",
+    "longDesc": [
+      "The Sella variant of Sugandha rice is parboiled. This makes the grain more resilient and less prone to breakage when processed.",
+      "It ensures that the cooked grains are firm and separate. This is a highly sought-after quality in a non-Basmati rice.",
+      "With an **average grain length of 7.90 MM**, it provides excellent yield and consistency. This makes it a great choice for various dishes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "49",
+    "category": "agriculture",
+    "title": "Sugandha Golden Sella Rice",
+    "image": riceImage[16],
+    "alt": "Sugandha Golden Sella Rice",
+    "imageBackground": bgColors[16],
+    "shortDesc": "A premium golden parboiled Sugandha rice. Its attractive color and firm texture make it a popular choice for colorful, aromatic meals.",
+    "longDesc": [
+      "This is the golden parboiled version of the long-grain Sugandha rice. The golden hue results from the special parboiling method used.",
+      "It combines the natural aroma of the variety with a superior, firm cooking texture. It looks beautiful on a plate when served.",
+      "It maintains an **average grain length of 7.85 MM**. This is a high-quality, non-Basmati option for those prioritizing color and firmness."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.85 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "50",
+    "category": "agriculture",
+    "title": "PR 11/14 Raw Rice",
+    "image": riceImage[17],
+    "alt": "PR 11/14 Raw Rice",
+    "imageBackground": bgColors[17],
+    "shortDesc": "A non-Basmati variety popular in Punjab and PR 14 in Haryana. Known for its uniform grain size, quality, and high carbohydrate content.",
+    "longDesc": [
+      "PR 11 and PR 14 are the same grain, named regionally in Punjab and Haryana. It is a well-loved non-Basmati rice variety.",
+      "This rice is rich in carbohydrates and offers a very uniform grain size. It is a good source of energy for daily consumption.",
+      "It has an **average grain length of 6.90 MM**. This variety is often preferred for its ease of cooking and consistent, fluffy texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "51",
+    "category": "agriculture",
+    "title": "PR 11/14 Steam Rice",
+    "image": riceImage[18],
+    "alt": "PR 11/14 Steam Rice",
+    "imageBackground": bgColors[18],
+    "shortDesc": "The steamed version of PR 11/14, offering a white, separate-grain texture. It is prized for its high-quality cooking and excellent presentation.",
+    "longDesc": [
+      "PR 11/14 Steam Rice is treated with steam for an improved finish. This process helps the grain maintain its shape and whiteness.",
+      "It is one of the most popular Indian Conventional Rice varieties. It cooks consistently well, yielding separate and soft grains.",
+      "It has an **average grain length of 6.90 MM**. This rice is a reliable and affordable option for a wide range of daily recipes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "52",
+    "category": "agriculture",
+    "title": "PR 11/14 Sella Rice",
+    "image": riceImage[19],
+    "alt": "PR 11/14 Sella Rice",
+    "imageBackground": bgColors[19],
+    "shortDesc": "The parboiled version of PR 11/14, which adds firmness and nutritional value. It is easy to cook and resists clumping and sticking.",
+    "longDesc": [
+      "PR 11/14 Sella Rice is parboiled, which is known to lock in more nutrients. This process also significantly strengthens the rice grain.",
+      "It ensures a fluffy, firm, and separate grain when cooked. This makes it an ideal choice for dishes like pulao and fried rice.",
+      "It has an **average grain length of 6.90 MM**. This reliable Sella rice is a consistent performer in all types of cooking methods."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "53",
+    "category": "agriculture",
+    "title": "PR 11/14 Golden Sella Rice",
+    "image": riceImage[20],
+    "alt": "PR 11/14 Golden Sella Rice",
+    "imageBackground": bgColors[20],
+    "shortDesc": "A premium golden-hued parboiled PR 11/14 rice. It provides an excellent, separate-grain cooked texture with a desirable visual appeal.",
+    "longDesc": [
+      "This Golden Sella rice is parboiled to achieve its attractive color. The parboiling process makes the grains resilient and very firm.",
+      "It cooks up beautifully with separate, fluffy grains. It is perfect for enhancing the visual presentation of a variety of dishes.",
+      "The rice measures an **average grain length of 6.80 MM**. This is a great choice for those seeking a value rice with a premium look."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.80 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "54",
+    "category": "agriculture",
+    "title": "Sona Masoori Raw Rice",
+    "image": riceImage[21],
+    "alt": "Sona Masoori Raw Rice",
+    "imageBackground": bgColors[21],
+    "shortDesc": "A lightweight, aromatic, medium-grain rice. It is known to have low starch, low cholesterol, and is great for healthy, daily eating.",
+    "longDesc": [
+      "Sona Masoori is a medium-grain, lightweight, and aromatic rice. It is a very popular choice for daily meals and diets.",
+      "It is distinguished by its low starch and cholesterol content. This makes it a healthier option, especially when left unpolished.",
+      "With an **average grain length of 5.20 MM**, it's a great choice. It is suitable for a wide variety of South Indian and regional dishes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "5.20 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 13%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "55",
+    "category": "agriculture",
+    "title": "Sona Masoori Steam Rice",
+    "image": riceImage[22],
+    "alt": "Sona Masoori Steam Rice",
+    "imageBackground": bgColors[22],
+    "shortDesc": "Steamed Sona Masoori rice, enhancing its visual appeal and grain separation. It retains its medium-grain size and healthy properties.",
+    "longDesc": [
+      "The steamed variant of Sona Masoori offers an improved, clean appearance. The process aids in a fluffier and more appealing cooked texture.",
+      "It retains its healthy attributes, including being low in starch and cholesterol. It is an excellent choice for a health-conscious diet.",
+      "It maintains an **average grain length of 5.20 MM**. This rice is perfect for everyday cooking, offering a light and pleasant taste."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "5.20 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 13%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "56",
+    "category": "agriculture",
+    "title": "Pusa Raw Basmati Rice (Pesticides Residue Free)",
+    "image": riceImage[23],
+    "alt": "Pusa Raw Basmati Rice",
+    "imageBackground": bgColors[23],
+    "shortDesc": "Pesticide Residue Free Pusa Raw Basmati, ensuring purity and high quality. It undergoes careful processing for health and safety.",
+    "longDesc": [
+      "This Basmati is processed to be free of pesticide residue. This ensures that the final product meets high health and quality standards.",
+      "After harvesting, husks are removed and the grain is polished. The entire process focuses on delivering a pure, white raw rice.",
+      "It has a minimum **Average Grain Length of 7.45 MM**. This is a premium, health-focused choice with guaranteed purity of 95%."
+    ],
+    "specifications": [
+      { "parameter": "Purity", "value": "95%" },
+      { "parameter": "Average Grain Length", "value": "7.45 MM Min." },
+      { "parameter": "Natural Admixture", "value": "5%" },
+      { "parameter": "Moisture", "value": "12.5% Max." },
+      { "parameter": "Broken Grain", "value": "1% Max." },
+      { "parameter": "Damage/Discolor Grain", "value": "1% Max." },
+      { "parameter": "Immature Grain", "value": "1% Max." },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "57",
+    "category": "agriculture",
+    "title": "1401 Raw Basmati Rice (Pesticides Residue Free)",
+    "image": riceImage[24],
+    "alt": "1401 Raw Basmati Rice",
+    "imageBackground": bgColors[24],
+    "shortDesc": "Pesticide Residue Free 1401 Raw Basmati. It's carefully processed to remove inedible husk and is fully polished for quality assurance.",
+    "longDesc": [
+      "This 1401 Raw Basmati is certified to be free of pesticide residue. It meets the demands of health-conscious consumers worldwide.",
+      "Post-harvest, it goes through polishing to achieve a white grain. The process is fully controlled to maintain health and quality standards.",
+      "It has an **average grain length of 7.70 MM. This variety is a pure, aromatic, and health-conscious option for daily consumption."
+    ],
+    "specifications": [
+      { "parameter": "Purity", "value": "95%" },
+      { "parameter": "Average Grain Length", "value": "7.70 MM Min." },
+      { "parameter": "Natural Admixture", "value": "5%" },
+      { "parameter": "Moisture", "value": "12.5% Max." },
+      { "parameter": "Broken Grain", "value": "1% Max." },
+      { "parameter": "Damage/Discolor Grain", "value": "1% Max." },
+      { "parameter": "Immature Grain", "value": "1% Max." },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "58",
+    "category": "agriculture",
+    "title": "1121 Steam Rice (Pesticides Residue Free)",
+    "image": riceImage[25],
+    "alt": "1121 Steam Rice",
+    "imageBackground": bgColors[25],
+    "shortDesc": "A thin, longer-grained Basmati with superior taste and texture, free from pesticide residue. Excellent for looking, smelling, and tasting.",
+    "longDesc": [
+      "The 1121 Steam Rice is free of pesticide residue, ensuring a cleaner, safer meal. The grains are extra long and have a beautiful finish.",
+      "It's popular for its great taste and non-sticky, uniform texture. This rice engages all three senses: look, smell, and taste.",
+      "It boasts an average grain length of 8.35 MM. This is a premium choice known globally for its exceptional quality and aroma."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "59",
+    "category": "agriculture",
+    "title": "1509 Steam Rice (Pesticides Residue Free)",
+    "image": riceImage[26],
+    "alt": "1509 Steam Rice",
+    "imageBackground": bgColors[26],
+    "shortDesc": "Pesticide Residue Free 1509 Steam Rice, known for its long grains and excellent texture. It provides a healthier, high-quality option.",
+    "longDesc": [
+      "This 1509 Steam Rice is free from harmful pesticide residue. The grains are long, thin, and offer an exceptional culinary experience.",
+      "The steaming process helps maintain a brilliant white color and firmness. It cooks up beautifully, remaining separate and fluffy.",
+      "It maintains an average grain length of 8.40 MM. This is a health-conscious and visually appealing Basmati for premium dishes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "60",
+    "category": "agriculture",
+    "title": "Sharbati Steam Rice (Pesticides Residue Free)",
+    "image": riceImage[27],
+    "alt": "Sharbati Steam Rice",
+    "imageBackground": bgColors[27],
+    "shortDesc": "Pesticide Residue Free Sharbati Steam Rice, a thinner variety with a lovely aroma. Ideal for everyday use while prioritizing health.",
+    "longDesc": [
+      "Sharbati Steam Rice is a thinner, aromatic Basmati variety. It is processed to be completely free of pesticide residue for a clean diet.",
+      "It’s an excellent, cost-effective substitute for other premium Basmati varieties. It still delivers a satisfying taste and aroma when cooked.",
+      "It has an average grain length of 7.10 MM. This rice is a popular choice for families and daily cooking, balancing price and quality."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.10 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "61",
+    "category": "agriculture",
+    "title": "1121 Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[28],
+    "alt": "1121 Sella Rice",
+    "imageBackground": bgColors[28],
+    "shortDesc": "Pesticide Residue Free 1121 Sella, famous for its firmness and non-stickiness. It releases energy slowly, helping to stabilize blood sugar.",
+    "longDesc": [
+      "This 1121 Sella is parboiled and free of pesticide residue. It is a highly popular choice among health-conscious consumers.",
+      "The grain is known for its incredible firmness and long length after cooking. It's often recommended for diabetics for slow energy release.",
+      "It has an average grain length of 8.35 MM. It’s the ultimate choice for a non-sticky, resilient, and premium quality Basmati."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "62",
+    "category": "agriculture",
+    "title": "1509 Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[29],
+    "alt": "1509 Sella Rice",
+    "imageBackground": bgColors[29],
+    "shortDesc": "Pesticide Residue Free 1509 Sella, a long-grain, firm, parboiled rice. It does not break easily and is a great source of sustained energy.",
+    "longDesc": [
+      "The 1509 Sella is parboiled and ensures zero pesticide residue. It is valued for its taste, firmness, and health benefits.",
+      "These grains are resilient and maintain their structure perfectly when cooked. They are ideal for various traditional and modern recipes.",
+      "With an average grain length of 8.40 MM, it’s a top-tier product. It is known for its excellent cooking consistency and premium texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "63",
+    "category": "agriculture",
+    "title": "Sugandha Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[30],
+    "alt": "Sugandha Sella Rice",
+    "imageBackground": bgColors[30],
+    "shortDesc": "Pesticide Residue Free Sugandha Sella rice, an aromatic non-Basmati with superior firmness. It offers excellent taste without compromising health.",
+    "longDesc": [
+      "This Sella variant is made from aromatic Sugandha rice without pesticide residue. The parboiling enhances its firmness and resilience.",
+      "It's a favored non-Basmati Sella rice for its taste and cooking stability. The grains remain beautifully separate and firm after cooking.",
+      "It has an average grain length of 7.90 MM. This is an excellent, healthy choice for daily consumption with a lovely, subtle aroma."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.90 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "64",
+    "category": "agriculture",
+    "title": "Sharbati Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[31],
+    "alt": "Sharbati Sella Rice",
+    "imageBackground": bgColors[31],
+    "shortDesc": "Pesticide Residue Free Sharbati Sella, a thin, aromatic, and firm rice. It is known for its quality and being easier on the digestive system.",
+    "longDesc": [
+      "Sharbati Sella is a thinner Basmati variety, free of pesticide residue. The parboiling gives it a characteristic yellowish hue and firmness.",
+      "It's appreciated for its distinct, light aroma and consistent cooking results. The grains do not easily break or become sticky.",
+      "It measures an average grain length of 7.10 MM. This rice is a reliable and healthy option for everyday meals and bulk cooking."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.10 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "65",
+    "category": "agriculture",
+    "title": "1121 Raw Rice",
+    "image": riceImage[32],
+    "alt": "1121 Raw Rice",
+    "imageBackground": bgColors[32],
+    "shortDesc": "The world’s longest grain Basmati, known for its long length, unique aroma, and sweet taste. It expands over 30% more volume after cooking.",
+    "longDesc": [
+      "The 1121 Basmati variety is famous for having the world's longest grain. It offers exceptional cooking qualities and a unique aroma.",
+      "After cooking, this rice expands significantly, giving over 30% more volume. This makes it an efficient and popular choice globally.",
+      "It boasts an impressive average grain length of 8.35 MM. This rice offers a special sweet taste and high nutritional value."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "66",
+    "category": "agriculture",
+    "title": "1121 Steam Rice",
+    "image": riceImage[33],
+    "alt": "1121 Steam Rice",
+    "imageBackground": bgColors[1],
+    "shortDesc": "Steamed 1121 Basmati, a pristine white grain with exceptional length. It is prized for its fluffy, non-sticky texture and fragrant aroma.",
+    "longDesc": [
+      "1121 Steam Rice undergoes steaming to achieve a brilliant white color. This process enhances the quality and separates the grain structure.",
+      "It retains the world's longest grain status and famous Basmati qualities. The cooked rice is consistently non-sticky and very fluffy.",
+      "It has an average grain length of 8.35 MM. This premium rice is ideal for high-end cuisine where appearance and texture are key."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "67",
+    "category": "agriculture",
+    "title": "1121 Sella Rice",
+    "image": riceImage[34],
+    "alt": "1121 Sella Rice",
+    "imageBackground": bgColors[2],
+    "shortDesc": "The parboiled 1121 Basmati. This sella variety is incredibly resilient, offering firm, separate grains and superior resistance to breakage.",
+    "longDesc": [
+      "1121 Sella Rice is parboiled, which dramatically increases its firmness. The grains withstand long cooking times without breaking easily.",
+      "It maintains the great length and unique aroma of the 1121 variety. It’s perfect for dishes that require robust, separate rice grains.",
+      "It measures an average grain length of 8.35 MM. This Sella rice is known for its cooking stability and consistent, high-quality result."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "68",
+    "category": "agriculture",
+    "title": "1121 Golden Sella Rice",
+    "image": riceImage[35],
+    "alt": "1121 Golden Sella Rice",
+    "imageBackground": bgColors[3],
+    "shortDesc": "A premium golden-hued 1121 sella rice. It has the longest grains and is famous for its unique aroma, special sweet taste, and high nutritional value.",
+    "longDesc": [
+      "This Golden Sella is the world's longest rice, parboiled to a rich golden color. The process enhances both its nutrition and durability.",
+      "It is highly recommended for its excellent cooking qualities and non-stick texture. It's a favorite in international markets for biryani.",
+      "It maintains an average grain length of 8.30 MM. This premium rice is a combination of superior quality, look, and health benefits."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.30 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "69",
+    "category": "agriculture",
+    "title": "Pusa Raw Rice",
+    "image": riceImage[36],
+    "alt": "Pusa Raw Rice",
+    "imageBackground": bgColors[4],
+    "shortDesc": "The first hybrid Basmati variety, famous for its long grains, aromatic fragrance, and non-stickiness after cooking. Highly acclaimed internationally.",
+    "longDesc": [
+      "Pusa Raw Rice is the original hybrid Basmati variety. It combines the traditional Basmati aroma with modern yield and grain qualities.",
+      "It boasts long grains that cook up non-sticky and separate. Its distinctive taste and high nutritional value have made it a favorite.",
+      "It features an average grain length of 7.45 MM. This variety is a highly acclaimed, top-quality choice in the international market."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.45 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "70",
+    "category": "agriculture",
+    "title": "Pusa Steam Rice",
+    "image": riceImage[37],
+    "alt": "Pusa Steam Rice",
+    "imageBackground": bgColors[5],
+    "shortDesc": "Steamed Pusa Basmati, with long grains and excellent non-stick properties. It enhances the visual appeal and preserves the distinctive aroma.",
+    "longDesc": [
+      "Pusa Steam Rice is processed to give it a beautiful white appearance. The steaming stabilizes the grain for better milling and cooking.",
+      "It retains the hybrid’s non-stick quality and aromatic fragrance. The grains elongate perfectly and remain separate when served.",
+      "It has an average grain length of 7.45 MM. This rice is a reliable option for both everyday cooking and special, festive meals."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.45 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "71",
+    "category": "agriculture",
+    "title": "Pusa Sella Rice",
+    "image": riceImage[38],
+    "alt": "Pusa Sella Rice",
+    "imageBackground": bgColors[6],
+    "shortDesc": "Parboiled Pusa Basmati, known for its remarkable firmness and long-grain quality. It offers consistent cooking results and great plate coverage.",
+    "longDesc": [
+      "Pusa Sella Rice is parboiled, which makes the grain incredibly hard and durable. This prevents breakage during milling and cooking.",
+      "It maintains the desirable long-grain quality and aroma of the Pusa variety. The cooked grains are firm, separate, and non-sticky.",
+      "It features an average grain length of 7.45 MM. This is a versatile, high-quality rice favored by chefs for its consistency."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.45 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "72",
+    "category": "agriculture",
+    "title": "Pusa Golden Sella Rice",
+    "image": riceImage[39],
+    "alt": "Pusa Golden Sella Rice",
+    "imageBackground": bgColors[7],
+    "shortDesc": "Premium golden parboiled Pusa rice. It is celebrated for its golden hue, firm texture, aromatic fragrance, and high nutritional value.",
+    "longDesc": [
+      "This Golden Sella variant is parboiled to achieve a rich golden color. The process enhances the grain's visual appeal and nutritional profile.",
+      "It offers all the qualities of Pusa rice—long grain, aroma, non-stickiness—with added firmness. It's great for elaborate dishes.",
+      "It has an average grain length of 7.40 MM. This premium golden rice guarantees a stunning presentation and excellent cooked texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "73",
+    "category": "agriculture",
+    "title": "Parmal Raw Rice",
+    "image": riceImage[40],
+    "alt": "Parmal Raw Rice",
+    "imageBackground": bgColors[8],
+    "shortDesc": "A long Non-Basmati rice similar to IR 64, but with longer grain size and premium quality. It enlarges almost double and does not stick if cooked properly.",
+    "longDesc": [
+      "Parmal Raw Rice is a popular Non-Basmati variety grown in Haryana and Punjab. It offers premium quality at a great price point.",
+      "The grain is known to almost double in size when cooked. If prepared correctly, it remains fluffy and does not stick together.",
+      "It has an average grain length of 6.50 MM. This rice is a reliable, value-for-money option for daily consumption across India."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.50 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "74",
+    "category": "agriculture",
+    "title": "Parmal Steam Rice",
+    "image": riceImage[41],
+    "alt": "Parmal Steam Rice",
+    "imageBackground": bgColors[9],
+    "shortDesc": "Steamed Parmal rice, known for its pristine white color and enhanced cooking texture. It remains separated and fluffy after preparation.",
+    "longDesc": [
+      "Parmal Steam Rice is processed with steam to improve its color and texture. This ensures a clean, white, and appealing grain.",
+      "Like the raw variant, it enlarges significantly during cooking. It is a reliable option for a separate and non-sticky rice dish.",
+      "It maintains an average grain length of 6.50 MM. This is a popular, cost-effective non-Basmati choice for large-scale and daily cooking."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.50 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "75",
+    "category": "agriculture",
+    "title": "Parmal Sella Rice",
+    "image": riceImage[42],
+    "alt": "Parmal Sella Rice",
+    "imageBackground": bgColors[10],
+    "shortDesc": "Parboiled Parmal rice, offering enhanced firmness and excellent durability. It is perfect for commercial use and recipes requiring resilient grains.",
+    "longDesc": [
+      "The Sella variant of Parmal rice is parboiled, which greatly increases its structural integrity. It is extremely resistant to breakage.",
+      "This non-Basmati rice is favored for its ability to maintain separate, firm grains. This makes it an easy and forgiving rice to cook.",
+      "It measures an average grain length of 6.50 MM. This Sella rice is a consistent, high-yield option for catering and bulk preparation."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.50 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "76",
+    "category": "agriculture",
+    "title": "Parmal Golden Sella Rice",
+    "image": riceImage[43],
+    "alt": "Parmal Golden Sella Rice",
+    "imageBackground": bgColors[11],
+    "shortDesc": "A golden parboiled Parmal rice. Its attractive golden color and firm texture make it a popular, high-quality, non-Basmati choice.",
+    "longDesc": [
+      "This Golden Sella is the premium parboiled Parmal rice with a golden hue. The color is a result of the specialized parboiling process.",
+      "It offers excellent cooking quality, with separate and fluffy grains. It maintains its firmness and shape after being cooked.",
+      "It has an average grain length of 6.40 MM. This rice provides a desirable appearance and reliable texture for various rice dishes."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "6.40 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "77",
+    "category": "agriculture",
+    "title": "Sharbati Raw Rice",
+    "image": riceImage[44],
+    "alt": "Sharbati Raw Rice",
+    "imageBackground": bgColors[12],
+    "shortDesc": "A non-Basmati rice with thinner grains and aroma similar to traditional Basmati. Easy to digest, excellent quality, and a scrumptious taste.",
+    "longDesc": [
+      "Sharbati Raw Rice has thinner grains and a pleasant aroma. It is a highly sought-after non-Basmati rice variety.",
+      "It consists of quality dietary fiber and has unique nutritional features. It is known for its excellent quality and delightful taste.",
+      "It has an average grain length of 7.10 MM. This rice is a great everyday choice, prized for its fluffy texture and easy digestibility."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.10 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "78",
+    "category": "agriculture",
+    "title": "Sharbati Steam Rice",
+    "image": riceImage[45],
+    "alt": "Sharbati Steam Rice",
+    "imageBackground": bgColors[13],
+    "shortDesc": "Steamed Sharbati rice, enhancing its bright color and separate grain texture. It retains the aromatic quality and delicious, fluffy taste.",
+    "longDesc": [
+      "Sharbati Steam Rice is steamed to achieve a brighter white color. This process also helps the grain remain separate when cooked.",
+      "It maintains the unique, fragrant aroma and excellent quality. It is a satisfying, cost-effective alternative to Basmati rice.",
+      "It has an average grain length of 7.10 MM. This rice is a fantastic choice for everyday meals, offering consistency and good flavor."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.10 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "79",
+    "category": "agriculture",
+    "title": "Pusa Sella Rice (Sharbati Category)",
+    "image": riceImage[46],
+    "alt": "Pusa Sella Rice",
+    "imageBackground": bgColors[14],
+    "shortDesc": "This is likely Pusa Sella displayed under a Sharbati section. It's a parboiled Basmati hybrid known for its long, firm, and non-sticky grains.",
+    "longDesc": [
+      "This Pusa Sella is parboiled to enhance its resilience and structure. The grains are extra firm and do not easily break when processed.",
+      "The Sella treatment ensures separate, non-sticky grains after cooking. It's a reliable choice for consistent, premium results.",
+      "It has an average grain length of 7.10 MM. This rice is great for dishes that demand individual, firm grains with good plate appeal."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.10 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "80",
+    "category": "agriculture",
+    "title": "Pusa Golden Sella Rice (Sharbati Category)",
+    "image": riceImage[47],
+    "alt": "Pusa Golden Sella Rice",
+    "imageBackground": bgColors[15],
+    "shortDesc": "This is likely Pusa Golden Sella, a premium, aromatic, golden parboiled rice. It offers great visual appeal and a firm cooked texture.",
+    "longDesc": [
+      "This golden rice is the parboiled Pusa variant with a golden hue. The special processing enhances its firmness and resilience in cooking.",
+      "It combines the aromatic qualities of the Basmati hybrid with a sturdy, non-sticky grain. This ensures a beautiful presentation.",
+      "It features an average grain length of 7.00 MM. This rice is perfect for special dishes where color and grain separation are important."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.00 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "81",
+    "category": "agriculture",
+    "title": "1121 Golden Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[48],
+    "alt": "1121 Golden Sella Rice",
+    "imageBackground": bgColors[16],
+    "shortDesc": "Pesticide Residue Free 1121 Golden Sella. This golden parboiled rice has high nutritional value, similar to brown rice, and is free of harmful chemicals.",
+    "longDesc": [
+      "This rice is guaranteed to be free of any harmful pesticides or chemicals. This makes it a safe option for health-conscious individuals.",
+      "Golden parboiled rice is proven to have high nutritional value, around 80% that of brown rice. It is a very healthy variety.",
+      "It features an average grain length of 8.30 MM. This premium, healthy rice is known for its excellent long grain and firm texture."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.30 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "82",
+    "category": "agriculture",
+    "title": "1509 Golden Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[49],
+    "alt": "1509 Golden Sella Rice",
+    "imageBackground": bgColors[17],
+    "shortDesc": "Pesticide Residue Free 1509 Golden Sella. It combines a long grain with a golden hue, offering a nutritious, firm, and excellent cooking experience.",
+    "longDesc": [
+      "This 1509 Golden Sella is free of any pesticide or chemical residue. It is safe for human health and meets high-quality standards.",
+      "The golden parboiling process locks in more nutrients, making it healthier. It’s known for its desirable long length and aroma.",
+      "It boasts an average grain length of 8.35 MM. This is a high-yield, premium, and healthy choice for bulk and home consumption."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "8.35 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  },
+  {
+    "id": "83",
+    "category": "agriculture",
+    "title": "Sugandha Golden Sella Rice (Pesticides Residue Free)",
+    "image": riceImage[50],
+    "alt": "Sugandha Golden Sella Rice",
+    "imageBackground": bgColors[18],
+    "shortDesc": "Pesticide Residue Free Sugandha Golden Sella. An aromatic, golden-parboiled, non-Basmati rice that offers great taste and visual appeal without harmful chemicals.",
+    "longDesc": [
+      "This Golden Sella is made from aromatic Sugandha rice without pesticide residue. The golden color is achieved through safe, careful parboiling.",
+      "It offers an excellent cooking experience with firm, separate grains. It is a healthier, cost-effective alternative to Basmati Golden Sella.",
+      "It measures an average grain length of 7.85 MM. This rice is perfect for large events and homes prioritizing both health and quality."
+    ],
+    "specifications": [
+      { "parameter": "Average Grain Length", "value": "7.85 MM" },
+      { "parameter": "Natural Field Ad-mixture", "value": "Under 5%" },
+      { "parameter": "Moisture", "value": "Under 12.5%" },
+      { "parameter": "Broken", "value": "Under 1%" },
+      { "parameter": "Damaged Discolor", "value": "Under 1%" },
+      { "parameter": "Immature", "value": "Under 1%" },
+      { "parameter": "Foreign Matter", "value": "Nil" }
+    ]
+  }
+]
+
+
