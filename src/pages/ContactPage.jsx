@@ -46,7 +46,7 @@ const ContactPage = () => {
         if (Object.keys(newErrors).length > 0) return;
 
         try {
-            const response = await axios.post("http://your-backend-url/api/send-contact", formData);
+            const response = await axios.post("http://your-backend/api/send-contact", formData);
 
             if (response.data.success) {
                 toast.success("Your message has been sent!");
