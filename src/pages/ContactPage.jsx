@@ -180,7 +180,7 @@ const ContactPage = () => {
                                 <div className='w-full flex flex-col 428:gap-20 gap-2'>
                                     <label htmlFor='message' className='font-montserrat font-medium text-black text-18'>Message <span className="text-red-500 font-montserrat font-medium text-18">*</span></label>
                                     <textarea
-                                        className={`border font-medium font-montserrat text-18 text-muted_text rounded-lg py-16 px-16 focus:outline-none  transition-all duration-200 ${errors.message ? 'border-red-500 focus:ring-2 focus:ring-red-400' : 'border-divider'}`}
+                                        className={`border font-medium font-montserrat text-18 text-muted_text rounded-lg py-16 px-16 focus:outline-none  transition-all duration-200 ${errors.message ? 'border-red-500 focus:ring-2 focus:ring-red-400' : 'border-divider'} resize-none`}
                                         placeholder='Type your message here ...'
                                         rows={5}
                                         required={true}
