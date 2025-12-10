@@ -9,7 +9,8 @@ import Phone from '../assets/icons/phone.svg'
 import Email from '../assets/icons/email.svg'
 import SubHeaderSection from '../components/SubHeaderSection';
 import ContactSubHedImage from '../assets/images/contactSubhedImage.png'
-import axios from "axios";
+import * as emailjs from '@emailjs/browser';
+
 
 const ContactPage = () => {
 
@@ -23,16 +24,18 @@ const ContactPage = () => {
     });
 
     const [errors, setErrors] = useState({})
+    const [loading, setLoading] = useState(false);
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // ---------------- Validate form ----------------
         let newErrors = {};
         if (!formData.fullName) newErrors.fullName = "Full Name is required";
         if (!formData.email) newErrors.email = "Email is required";
@@ -42,21 +45,43 @@ const ContactPage = () => {
         if (!formData.message) newErrors.message = "Message is required";
 
         setErrors(newErrors);
-
         if (Object.keys(newErrors).length > 0) return;
 
-        try {
-            const response = await axios.post("http://your-backend/api/send-contact", formData);
+        setLoading(true); // disable button
 
-            if (response.data.success) {
-                toast.success("Your message has been sent!");
-            } else {
-                toast.error("Failed to send message");
-            }
+        try {
+            const serviceID = "service_804e26k";
+            const templateID = "template_y213m5n";
+            const publicKey = "XDh3JCwEif2ZbDZ49";
+
+            const templateParams = {
+                fullName: formData.fullName,
+                email: formData.email,
+                phoneNumber: formData.phoneNumber,
+                company: formData.company,
+                subject: formData.subject,
+                message: formData.message.replace(/\n/g, '<br>'), // preserve line breaks
+            };
+
+            await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+            toast.success("Your message has been sent!");
+            setFormData({
+                fullName: "",
+                email: "",
+                phoneNumber: "",
+                company: "",
+                subject: "",
+                message: "",
+            });
         } catch (error) {
-            toast.error("Server error! Try again later.");
+            console.error(error);
+            toast.error("Failed to send message. Try again later.");
+        } finally {
+            setLoading(false); // enable button again
         }
     };
+
 
 
     const companyNumber = "+919265753274"; // Your company number
@@ -167,7 +192,7 @@ const ContactPage = () => {
                                 </div>
 
                                 <div className='flex justify-center items-center'>
-                                    <PrimaryButton title={'Send Request'} pl={36} pr={36} type={'submit'} />
+                                    <PrimaryButton title={loading ? 'Sending...' : 'Send Request'} pl={36} pr={36} type={'submit'} />
                                 </div>
 
                             </form>
