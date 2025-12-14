@@ -4,7 +4,7 @@ import Container from './Container'
 const ProductCatalog = () => {
     return (
         <>
-            <div className="border-2 border-divider/40 600px:mb-100 mb-48 rounded-full"></div>
+            <div className="border-2 border-divider/40  rounded-full"></div>
 
             <div
                 className="
