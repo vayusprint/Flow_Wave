@@ -37,6 +37,8 @@ import Product_32 from '../assets/productImg/32.png'
 import Product_33 from '../assets/productImg/33.png'
 
 
+import Peanut_1 from '../assets/peanutImage/1.webp'
+
 import Rice_1 from '../assets/riceImage/1.png'
 import Rice_2 from '../assets/riceImage/2.png'
 import Rice_3 from '../assets/riceImage/3.png'
@@ -128,6 +130,9 @@ export const productImage = [
     Product_31,
     Product_32,
     Product_33,
+]
+export const peanutImage = [
+  Peanut_1
 ]
 export const riceImage = [
     Rice_1,
@@ -2456,7 +2461,37 @@ export const products = [
       { "parameter": "Immature", "value": "Under 1%" },
       { "parameter": "Foreign Matter", "value": "Nil" }
     ]
-  }
+  },
+  {
+  "id": "83",
+  "category": "agriculture",
+  "title": "Peanut (Groundnut)",
+  "image": peanutImage[0],
+  "alt": "Peanut Groundnut",
+  "imageBackground": bgColors[19],
+  "shortDesc": "Premium quality Indian Peanuts (Groundnuts) suitable for export. Available in multiple varieties, machine cleaned or handpicked, meeting international quality and safety standards.",
+  "longDesc": [
+    "Our Peanuts (Arachis hypogaea) are sourced from the finest farms in India and processed under strict quality control to meet global export requirements.",
+    "Available in popular varieties such as Java, Bold, TJ, and Redskin peanuts, these kernels are carefully machine cleaned or handpicked selected (HPS) for superior purity.",
+    "They are widely used for oil extraction, peanut butter production, confectionery, bakery applications, and direct consumption in raw, roasted, or salted form."
+  ],
+  "specifications": [
+    { "parameter": "HS Code", "value": "1202" },
+    { "parameter": "Botanical Name", "value": "Arachis hypogaea" },
+    { "parameter": "Origin", "value": "India" },
+    { "parameter": "Varieties Available", "value": "Java, Bold, TJ, Redskin" },
+    { "parameter": "Quality", "value": "Machine Cleaned / Handpicked Selected (HPS)" },
+    { "parameter": "Moisture", "value": "Max 8%" },
+    { "parameter": "Admixture", "value": "Max 1%" },
+    { "parameter": "Broken Kernels", "value": "Max 1–2%" },
+    { "parameter": "Aflatoxin", "value": "Below 20 ppb (Export Standard)" },
+    { "parameter": "Packing", "value": "25 kg / 50 kg PP bags or Jute bags (as per buyer requirement)" },
+    { "parameter": "Shelf Life", "value": "12 months from date of packing (stored in cool & dry place)" },
+    { "parameter": "Port of Loading", "value": "Mundra / Pipavav / Nhava Sheva, India" },
+    { "parameter": "Country of Origin", "value": "India" }
+  ]
+}
+
 ]
 
 

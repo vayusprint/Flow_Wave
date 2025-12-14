@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import workerImg from "../../assets/images/worker_aboutus.png"
+import ourcompany_img from "../../assets/images/ourcompany.jpg"
 import PrimaryButton from '../PrimaryButton'
 import { useNavigate } from 'react-router-dom'
 
@@ -23,7 +24,8 @@ const OurCompany = () => {
                         <div className="w-full flex justify-center items-center">
                           <img
                               loading='lazy'
-                                src={workerImg}
+                                // src={workerImg}
+                                src={ourcompany_img}
                                 alt="Industrial Worker"
                                 className="relative w-full rounded-lg shadow-xl"
                             />

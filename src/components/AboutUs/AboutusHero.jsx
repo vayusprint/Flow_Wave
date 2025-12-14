@@ -3,6 +3,7 @@
 import React from 'react'
 import Container from '../Container'
 import workerImg from "../../assets/images/worker_aboutus.png"
+import ourcompany_img from "../../assets/images/ourcompany.jpg"
 import PrimaryButton from '../PrimaryButton'
 import { motion } from "framer-motion"
 import { Navigate, useNavigate } from 'react-router-dom'
@@ -17,7 +18,7 @@ const textVariants = {
 }
 
 const AboutusHero = () => {
-  const navigate = useNavigate()
+    const navigate = useNavigate()
 
     return (
         <Container>
@@ -33,7 +34,8 @@ const AboutusHero = () => {
                     >
                         <img
                             loading='lazy'
-                            src={workerImg}
+                            src={ourcompany_img}
+                            // src={workerImg}
                             alt="Industrial Worker"
                             className="relative w-full rounded-lg shadow-xl"
                         />
@@ -56,16 +58,16 @@ const AboutusHero = () => {
                             variants={textVariants}
                             className="font-poppins font-normal text-20 text-bodytext leading-20 py-16"
                         >
-                                 At Flow Wave we specialize in designing and manufacturing
-                                 high-quality industrial parts that power progress across global
-                                 industries. With a focus on precision, innovation, and
-                                 reliability, we deliver solutions that meet the toughest
-                                 engineering standards. Our expert team combines years of
-                                 experience with advanced technology to ensure excellence in every
-                                 component we produce. We believe in building long-term
-                                 partnerships through trust, performance, and consistent quality.
-                                 From concept to completion, we’re dedicated to engineering the
-                                 future of industrial innovation.
+                            At Flow Wave we specialize in designing and manufacturing
+                            high-quality industrial parts that power progress across global
+                            industries. With a focus on precision, innovation, and
+                            reliability, we deliver solutions that meet the toughest
+                            engineering standards. Our expert team combines years of
+                            experience with advanced technology to ensure excellence in every
+                            component we produce. We believe in building long-term
+                            partnerships through trust, performance, and consistent quality.
+                            From concept to completion, we’re dedicated to engineering the
+                            future of industrial innovation.
                         </motion.p>
 
                         <motion.p
@@ -83,7 +85,7 @@ const AboutusHero = () => {
                             variants={textVariants}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            <PrimaryButton onClick={()=>navigate('/product-list')} title={"Explore our products"} pl={24} pr={24}/>
+                            <PrimaryButton onClick={() => navigate('/product-list')} title={"Explore our products"} pl={24} pr={24} />
                         </motion.div>
 
                     </motion.div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../Container";
 import heroImage from "../../assets/images/heroimage.jpg";
+import home_hero from "../../assets/images/home_hero.jpg";
 import PrimaryButton from "../PrimaryButton";
 import AboutStatsSection from "../AboutUs/AboutStatsSection";
 import { Link, useNavigate } from "react-router-dom";
@@ -25,7 +26,8 @@ const HeroSection = () => {
         <div className="absolute inset-0">
           <img
             loading="lazy"
-            src={heroImage}
+            // src={heroImage}
+            src={home_hero}
             alt="Hero"
             className="w-full h-full object-cover"
           />
